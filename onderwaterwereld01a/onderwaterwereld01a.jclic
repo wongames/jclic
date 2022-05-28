@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="onderwaterwereld01a" version="0.1.3">
+ <settings>
+  <title>onderwaterwereld01a</title>
+  <revision description="created" date="5/26/22" />
+  <author name="Charlotte Peeters" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Wie zit er verstopt?" delay="1" />
+  <item name="puzzel4" delay="1" />
+  <item name="tellen van walvissen" delay="1" />
+  <item name="welke kleur" delay="1" />
+  <item name="van groot naar klein" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="Wie zit er verstopt?" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Wie zit er verstopt in het zeewier?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondonderwaterwereld.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x00FFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause_onderwaterwereld.mp3" />
+     <sound id="finishedOk" file="applause_onderwaterwereld.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="dolfijn.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="krab.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="octopus.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schildpad.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vis.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zeepaard.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="dolfijnverstopt.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="krabverstopt.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="octopusverstopt.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schildpadverstopt.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="visverstopt.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zeepaardverstopt.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondonderwaterwereld.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x00FFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause_onderwaterwereld.mp3" />
+     <sound id="finishedOk" file="applause_onderwaterwereld.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" border="true" image="puzzel4.jpg">
+    <style borderStroke="2.7" markerStroke="2.7">
+     <color border="0xFF3300" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="van groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="pictogrootnaarklein.jpg" type="initial">
+     <style />
+     <p>Van GROOT naar klein.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondonderwaterwereld.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x00FFFF" border="true" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="kwalgroot.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kwalkleiner.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kwalkleinst.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen van walvissen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel walvissen tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondonderwaterwereld.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x00FFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause_onderwaterwereld.mp3" />
+     <sound id="finishedOk" file="applause_onderwaterwereld.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="walvis1.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="walvis2.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="walvis3.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="walvis4.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="getalbeeld1.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld2.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld3.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld4.jpg">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="welke kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welk puzzelstukje ontbreekt er bij de zeedieren? </p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondonderwaterwereld.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x00FFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause_onderwaterwereld.mp3" />
+     <sound id="finishedOk" file="applause_onderwaterwereld.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="6" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="3" />
+    <cell id="1" image="blauwpuzzel1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="blauwpuzzel5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="geelpuzzel1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="geelpuzzel2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="roodpuzzel1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="roodpuzzel2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="blauwpuzzel2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="blauwpuzzel4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="geelpuzzel3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="geelpuzzel4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="roodpuzzel3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="roodpuzzel4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="blauwpuzzel3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="blauwpuzzel6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="geelpuzzel5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="geelpuzzel6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="roodpuzzel5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="roodpuzzel6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="sterpuzzel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="walvismetpuzzels.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="krabpuzzel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondonderwaterwereld.jpg" file="achtergrondonderwaterwereld.jpg" />
+  <media name="blauwpuzzel1.jpg" file="blauwpuzzel1.jpg" />
+  <media name="blauwpuzzel2.jpg" file="blauwpuzzel2.jpg" />
+  <media name="blauwpuzzel3.jpg" file="blauwpuzzel3.jpg" />
+  <media name="blauwpuzzel4.jpg" file="blauwpuzzel4.jpg" />
+  <media name="blauwpuzzel5.jpg" file="blauwpuzzel5.jpg" />
+  <media name="blauwpuzzel6.jpg" file="blauwpuzzel6.jpg" />
+  <media name="dolfijn.jpg" file="dolfijn.jpg" />
+  <media name="dolfijnverstopt.jpg" file="dolfijnverstopt.jpg" />
+  <media name="geelpuzzel1.jpg" file="geelpuzzel1.jpg" />
+  <media name="geelpuzzel2.jpg" file="geelpuzzel2.jpg" />
+  <media name="geelpuzzel3.jpg" file="geelpuzzel3.jpg" />
+  <media name="geelpuzzel4.jpg" file="geelpuzzel4.jpg" />
+  <media name="geelpuzzel5.jpg" file="geelpuzzel5.jpg" />
+  <media name="geelpuzzel6.jpg" file="geelpuzzel6.jpg" />
+  <media name="getalbeeld1.jpg" file="getalbeeld1.jpg" />
+  <media name="getalbeeld2.jpg" file="getalbeeld2.jpg" />
+  <media name="getalbeeld3.jpg" file="getalbeeld3.jpg" />
+  <media name="getalbeeld4.jpg" file="getalbeeld4.jpg" />
+  <media name="krab.jpg" file="krab.jpg" />
+  <media name="krabpuzzel.jpg" file="krabpuzzel.jpg" />
+  <media name="krabverstopt.jpg" file="krabverstopt.jpg" />
+  <media name="kwalgroot.jpg" file="kwalgroot.jpg" />
+  <media name="kwalkleiner.jpg" file="kwalkleiner.jpg" />
+  <media name="kwalkleinst.jpg" file="kwalkleinst.jpg" />
+  <media name="octopus.jpg" file="octopus.jpg" />
+  <media name="octopusverstopt.jpg" file="octopusverstopt.jpg" />
+  <media name="pictogrootnaarklein.jpg" file="pictogrootnaarklein.jpg" />
+  <media name="puzzel4.jpg" file="puzzel4.jpg" />
+  <media name="roodpuzzel1.jpg" file="roodpuzzel1.jpg" />
+  <media name="roodpuzzel2.jpg" file="roodpuzzel2.jpg" />
+  <media name="roodpuzzel3.jpg" file="roodpuzzel3.jpg" />
+  <media name="roodpuzzel4.jpg" file="roodpuzzel4.jpg" />
+  <media name="roodpuzzel5.jpg" file="roodpuzzel5.jpg" />
+  <media name="roodpuzzel6.jpg" file="roodpuzzel6.jpg" />
+  <media name="schildpad.jpg" file="schildpad.jpg" />
+  <media name="schildpadverstopt.jpg" file="schildpadverstopt.jpg" />
+  <media name="sterpuzzel.jpg" file="sterpuzzel.jpg" />
+  <media name="vis.jpg" file="vis.jpg" />
+  <media name="visverstopt.jpg" file="visverstopt.jpg" />
+  <media name="walvis1.jpg" file="walvis1.jpg" />
+  <media name="walvis2.jpg" file="walvis2.jpg" />
+  <media name="walvis3.jpg" file="walvis3.jpg" />
+  <media name="walvis4.jpg" file="walvis4.jpg" />
+  <media name="walvismetpuzzels.jpg" file="walvismetpuzzels.jpg" />
+  <media name="zeepaard.jpg" file="zeepaard.jpg" />
+  <media name="zeepaardverstopt.jpg" file="zeepaardverstopt.jpg" />
+  <media name="applause_onderwaterwereld.mp3" file="applause_onderwaterwereld.mp3" />
+ </mediaBag>
+</JClicProject>
+
