@@ -1,0 +1,63 @@
+{
+  "title": "kleurenenvormen02a",
+  "author": "charlotte peeters",
+  "date": "31-7-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "kleurenenvormen02a.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 36,
+  "totalSize": 1983909,
+  "files": [
+    "achtergrondkleur.jpg",
+    "blauw.jpg",
+    "favicon.ico",
+    "geel.jpg",
+    "groen.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "kindblauw.jpg",
+    "kindbruin.jpg",
+    "kindgeel.jpg",
+    "kindgrijs.jpg",
+    "kindgroen.jpg",
+    "kindoranje.jpg",
+    "kindpaars.jpg",
+    "kindrood.jpg",
+    "kindroos.jpg",
+    "kindzwart.jpg",
+    "kleurapplause.mp3",
+    "kleurenenvormen02a.jclic",
+    "kleurenenvormen02a.jclic.js",
+    "oranje.jpg",
+    "paars.jpg",
+    "pictogrootnaarklein.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel9stukjes.jpg",
+    "rood.jpg",
+    "roos.jpg",
+    "serie1.jpg",
+    "stergroot.jpg",
+    "sterklein.jpg",
+    "sterkleinst.jpg",
+    "stift1.jpg",
+    "stift2.jpg",
+    "stift3.jpg",
+    "stift4.jpg",
+    "stift5.jpg",
+    "zwart.jpg"
+  ]
+}

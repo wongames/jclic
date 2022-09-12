@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="kleurenenvormen02a" version="0.1.3">
+ <settings>
+  <title>kleurenenvormen02a</title>
+  <revision description="created" date="7/31/22" />
+  <author name="charlotte peeters" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="volgorde" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="memo kleur" delay="1" />
+  <item name="grootnaarklein" delay="1" />
+  <item name="tellen" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondkleur.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="kleurapplause.mp3" />
+     <sound id="finishedOk" file="kleurapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="5" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell image="kindblauw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindbruin.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindgeel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindgrijs.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindgroen.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindoranje.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindpaars.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindrood.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindroos.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindzwart.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="grootnaarklein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="pictogrootnaarklein.jpg" type="initial">
+     <style />
+     <p>Van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondkleur.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="kleurapplause.mp3" />
+     <sound id="finishedOk" file="kleurapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="stergroot.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sterklein.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sterkleinst.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="volgorde" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" border="true" image="serie1.jpg" type="initial">
+     <style margin="50" />
+     <p>Zet de plaatjes in de juiste volgorde:</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondkleur.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="kleurapplause.mp3" />
+     <sound id="finishedOk" file="kleurapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="8" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="8" rows="1" />
+    <cell image="blauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groen.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paars.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwart.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="oranje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondkleur.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="kleurapplause.mp3" />
+     <sound id="finishedOk" file="kleurapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel9stukjes.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel stiften tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondkleur.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="kleurapplause.mp3" />
+     <sound id="finishedOk" file="kleurapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="stift1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stift2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stift3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stift4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stift5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>1</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>2</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>4</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>5</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondkleur.jpg" file="achtergrondkleur.jpg" />
+  <media name="blauw.jpg" file="blauw.jpg" />
+  <media name="geel.jpg" file="geel.jpg" />
+  <media name="groen.jpg" file="groen.jpg" />
+  <media name="kindblauw.jpg" file="kindblauw.jpg" />
+  <media name="kindbruin.jpg" file="kindbruin.jpg" />
+  <media name="kindgeel.jpg" file="kindgeel.jpg" />
+  <media name="kindgrijs.jpg" file="kindgrijs.jpg" />
+  <media name="kindgroen.jpg" file="kindgroen.jpg" />
+  <media name="kindoranje.jpg" file="kindoranje.jpg" />
+  <media name="kindpaars.jpg" file="kindpaars.jpg" />
+  <media name="kindrood.jpg" file="kindrood.jpg" />
+  <media name="kindroos.jpg" file="kindroos.jpg" />
+  <media name="kindzwart.jpg" file="kindzwart.jpg" />
+  <media name="oranje.jpg" file="oranje.jpg" />
+  <media name="paars.jpg" file="paars.jpg" />
+  <media name="pictogrootnaarklein.jpg" file="pictogrootnaarklein.jpg" />
+  <media name="puzzel9stukjes.jpg" file="puzzel9stukjes.jpg" />
+  <media name="rood.jpg" file="rood.jpg" />
+  <media name="roos.jpg" file="roos.jpg" />
+  <media name="serie1.jpg" file="serie1.jpg" />
+  <media name="stergroot.jpg" file="stergroot.jpg" />
+  <media name="sterklein.jpg" file="sterklein.jpg" />
+  <media name="sterkleinst.jpg" file="sterkleinst.jpg" />
+  <media name="stift1.jpg" file="stift1.jpg" />
+  <media name="stift2.jpg" file="stift2.jpg" />
+  <media name="stift3.jpg" file="stift3.jpg" />
+  <media name="stift4.jpg" file="stift4.jpg" />
+  <media name="stift5.jpg" file="stift5.jpg" />
+  <media name="zwart.jpg" file="zwart.jpg" />
+  <media name="kleurapplause.mp3" file="kleurapplause.mp3" />
+ </mediaBag>
+</JClicProject>
+
