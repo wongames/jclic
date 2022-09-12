@@ -1,0 +1,61 @@
+{
+  "title": "kleurenenvormen02",
+  "date": "21-7-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "kleurenenvormen02.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 35,
+  "totalSize": 2869847,
+  "files": [
+    "achtergrondkleur.jpg",
+    "blauw.jpg",
+    "bruin.jpg",
+    "favicon.ico",
+    "geel.jpg",
+    "getalbeeld1.jpg",
+    "getalbeeld2.jpg",
+    "getalbeeld3.jpg",
+    "getalbeeld4.jpg",
+    "getalbeeld5.jpg",
+    "getalbeeld6.jpg",
+    "groen.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "kleurapplause.mp3",
+    "kleurenenvormen02.jclic",
+    "kleurenenvormen02.jclic.js",
+    "oranje.jpg",
+    "paars.jpg",
+    "patroongeelblauw.jpg",
+    "patroongroenrood.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzelelmer.jpg",
+    "rood.jpg",
+    "roos.jpg",
+    "verspat1.jpg",
+    "verspat2.jpg",
+    "verspat3.jpg",
+    "verspat4.jpg",
+    "verspat5.jpg",
+    "verspat6.jpg",
+    "volgorde1.jpg",
+    "volgorde2.jpg",
+    "volgorde3.jpg",
+    "volgorde4.jpg",
+    "zwart.jpg"
+  ]
+}
