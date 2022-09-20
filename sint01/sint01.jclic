@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="sint01" version="0.1.3">
+ <settings>
+  <title>Sint01</title>
+  <revision description="created" date="8/12/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="MEMO" delay="1" />
+  <item name="kleurenhoefijzers" delay="1" />
+  <item name="TELLEN" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="welk cadeau" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="MEMO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="paard.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piet.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roet.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sint.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stoomboot.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zak .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="kleurenhoefijzers" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Kan jij het juiste hoefijzer vinden?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="blauw hoefijzer  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel hoefijzer .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="goud hoefijzer .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groen hoefijzer .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paars hoefijzer .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood hoefijzer .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="blauw hoefijzer poot .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel hoefijze poot .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="goud hoefijzer poot  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groen hoefijzer poot .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paars hoefijzerpoot .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood hoefijzer poot .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="TELLEN" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel koekjes tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="koekje 1a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="koekje 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="koekje 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="koekje 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="getalbeeld1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" border="true" image="puzzel 1.jpg">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="welk cadeau" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welks speelgoed zit er in het pakje verstopt?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="beer schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="eend schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="hobbelpaard schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kraan schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="snoep schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trompet schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vliegtuig schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trommel schaduw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="beer.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="eend.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="hobbelpaard.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kraan.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="snoep.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trompet.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vliegtuig.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trommel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondsint.jpg" file="achtergrondsint.jpg" />
+  <media name="beer schaduw.jpg" file="beer_schaduw.jpg" />
+  <media name="beer.jpg" file="beer.jpg" />
+  <media name="blauw hoefijzer  .jpg" file="blauw_hoefijzer__.jpg" />
+  <media name="blauw hoefijzer poot .jpg" file="blauw_hoefijzer_poot_.jpg" />
+  <media name="eend schaduw.jpg" file="eend_schaduw.jpg" />
+  <media name="eend.jpg" file="eend.jpg" />
+  <media name="geel hoefijze poot .jpg" file="geel_hoefijze_poot_.jpg" />
+  <media name="geel hoefijzer .jpg" file="geel_hoefijzer_.jpg" />
+  <media name="getalbeeld1.jpg" file="getalbeeld1.jpg" />
+  <media name="getalbeeld2.jpg" file="getalbeeld2.jpg" />
+  <media name="getalbeeld3.jpg" file="getalbeeld3.jpg" />
+  <media name="getalbeeld4.jpg" file="getalbeeld4.jpg" />
+  <media name="goud hoefijzer .jpg" file="goud_hoefijzer_.jpg" />
+  <media name="goud hoefijzer poot  .jpg" file="goud_hoefijzer_poot__.jpg" />
+  <media name="groen hoefijzer .jpg" file="groen_hoefijzer_.jpg" />
+  <media name="groen hoefijzer poot .jpg" file="groen_hoefijzer_poot_.jpg" />
+  <media name="hobbelpaard schaduw.jpg" file="hobbelpaard_schaduw.jpg" />
+  <media name="hobbelpaard.jpg" file="hobbelpaard.jpg" />
+  <media name="koekje 1a.jpg" file="koekje_1a.jpg" />
+  <media name="koekje 2.jpg" file="koekje_2.jpg" />
+  <media name="koekje 3.jpg" file="koekje_3.jpg" />
+  <media name="koekje 4.jpg" file="koekje_4.jpg" />
+  <media name="kraan schaduw.jpg" file="kraan_schaduw.jpg" />
+  <media name="kraan.jpg" file="kraan.jpg" />
+  <media name="paard.jpg" file="paard.jpg" />
+  <media name="paars hoefijzer .jpg" file="paars_hoefijzer_.jpg" />
+  <media name="paars hoefijzerpoot .jpg" file="paars_hoefijzerpoot_.jpg" />
+  <media name="piet.jpg" file="piet.jpg" />
+  <media name="puzzel 1.jpg" file="puzzel_1.jpg" />
+  <media name="roet.jpg" file="roet.jpg" />
+  <media name="rood hoefijzer .jpg" file="rood_hoefijzer_.jpg" />
+  <media name="rood hoefijzer poot .jpg" file="rood_hoefijzer_poot_.jpg" />
+  <media name="sint.jpg" file="sint.jpg" />
+  <media name="snoep schaduw.jpg" file="snoep_schaduw.jpg" />
+  <media name="snoep.jpg" file="snoep.jpg" />
+  <media name="stoomboot.jpg" file="stoomboot.jpg" />
+  <media name="trommel schaduw.jpg" file="trommel_schaduw.jpg" />
+  <media name="trommel.jpg" file="trommel.jpg" />
+  <media name="trompet schaduw.jpg" file="trompet_schaduw.jpg" />
+  <media name="trompet.jpg" file="trompet.jpg" />
+  <media name="vliegtuig schaduw.jpg" file="vliegtuig_schaduw.jpg" />
+  <media name="vliegtuig.jpg" file="vliegtuig.jpg" />
+  <media name="zak .jpg" file="zak_.jpg" />
+  <media name="SINTapplause.mp3" file="sintapplause.mp3" />
+ </mediaBag>
+</JClicProject>
+
