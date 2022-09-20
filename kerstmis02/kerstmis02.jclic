@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="kerstmis02" version="0.1.3">
+ <settings>
+  <title>kerstmis02</title>
+  <revision description="created" date="8/15/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="patroon" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="van groot naar klein" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond kerst.png" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF3300" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="KERSTapplause.mp3" />
+     <sound id="finishedOk" file="KERSTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="kaars.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstbal1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstbal2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstbal3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstbal4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstbal5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstboom.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lichtjes.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel cadeautjes tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond kerst.png" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF3300" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="KERSTapplause.mp3" />
+     <sound id="finishedOk" file="KERSTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="cadeau 1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 2A.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="zak 1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zak 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zak 3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zak 4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zak 5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zak 6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="patroon" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Vul het patroon aan..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond kerst.png" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF3300" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="KERSTapplause.mp3" />
+     <sound id="finishedOk" file="KERSTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="1" cellWidth="610.0" cellHeight="188.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" image="lichtjes 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="lichtjes 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="lichtjes 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="200.0" cellHeight="188.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="lichtje geel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lichtje blauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lichtje rood.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lichtje paars .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lichtje oranje .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond kerst.png" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF3300" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="KERSTapplause.mp3" />
+     <sound id="finishedOk" file="KERSTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel3.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="van groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="groot naar klein .jpg" type="initial">
+     <style>
+      <font family="Arial" size="72" />
+     </style>
+     <p>Van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond kerst.png" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFF3300" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="KERSTapplause.mp3" />
+     <sound id="finishedOk" file="KERSTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="kerstboom a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstboom b.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstboom c.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstboom d.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kerstboom e.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="cadeau 1.jpg" file="cadeau_1.jpg" />
+  <media name="cadeau 2A.jpg" file="cadeau_2a.jpg" />
+  <media name="cadeau 3.jpg" file="cadeau_3.jpg" />
+  <media name="cadeau 4.jpg" file="cadeau_4.jpg" />
+  <media name="cadeau 5.jpg" file="cadeau_5.jpg" />
+  <media name="cadeau 6.jpg" file="cadeau_6.jpg" />
+  <media name="groot naar klein .jpg" file="groot_naar_klein_.jpg" />
+  <media name="kaars.jpg" file="kaars.jpg" />
+  <media name="kerstbal1.jpg" file="kerstbal1.jpg" />
+  <media name="kerstbal2.jpg" file="kerstbal2.jpg" />
+  <media name="kerstbal3.jpg" file="kerstbal3.jpg" />
+  <media name="kerstbal4.jpg" file="kerstbal4.jpg" />
+  <media name="kerstbal5.jpg" file="kerstbal5.jpg" />
+  <media name="kerstboom a.jpg" file="kerstboom_a.jpg" />
+  <media name="kerstboom b.jpg" file="kerstboom_b.jpg" />
+  <media name="kerstboom c.jpg" file="kerstboom_c.jpg" />
+  <media name="kerstboom d.jpg" file="kerstboom_d.jpg" />
+  <media name="kerstboom e.jpg" file="kerstboom_e.jpg" />
+  <media name="kerstboom.jpg" file="kerstboom.jpg" />
+  <media name="lichtje blauw.jpg" file="lichtje_blauw.jpg" />
+  <media name="lichtje geel.jpg" file="lichtje_geel.jpg" />
+  <media name="lichtje oranje .jpg" file="lichtje_oranje_.jpg" />
+  <media name="lichtje paars .jpg" file="lichtje_paars_.jpg" />
+  <media name="lichtje rood.jpg" file="lichtje_rood.jpg" />
+  <media name="lichtjes 1.jpg" file="lichtjes_1.jpg" />
+  <media name="lichtjes 2.jpg" file="lichtjes_2.jpg" />
+  <media name="lichtjes 3.jpg" file="lichtjes_3.jpg" />
+  <media name="lichtjes.jpg" file="lichtjes.jpg" />
+  <media name="puzzel3.jpg" file="puzzel3.jpg" />
+  <media name="ster.jpg" file="ster.jpg" />
+  <media name="zak 1.jpg" file="zak_1.jpg" />
+  <media name="zak 2.jpg" file="zak_2.jpg" />
+  <media name="zak 3.jpg" file="zak_3.jpg" />
+  <media name="zak 4.jpg" file="zak_4.jpg" />
+  <media name="zak 5.jpg" file="zak_5.jpg" />
+  <media name="zak 6.jpg" file="zak_6.jpg" />
+  <media name="KERSTapplause.mp3" file="kerstapplause.mp3" />
+  <media name="achtergrond kerst.png" file="achtergrond_kerst.png" />
+ </mediaBag>
+</JClicProject>
+
