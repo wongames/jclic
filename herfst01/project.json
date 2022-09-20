@@ -1,0 +1,62 @@
+{
+  "title": "Herfst01",
+  "date": "10-8-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "herfst01.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 36,
+  "totalSize": 1282857,
+  "files": [
+    "1_blaadje.jpg",
+    "1_blaadje_2.jpg",
+    "2blaadje_.jpg",
+    "2blaadje_2_.jpg",
+    "3blaadje2__.jpg",
+    "3blaadje__.jpg",
+    "achtergrondherfst.jpg",
+    "applauseherfst.mp3",
+    "blaadje.jpg",
+    "blaadje_schaduw.jpg",
+    "blad.jpg",
+    "blad_.jpg",
+    "blad_schaduw_.jpg",
+    "bolster.jpg",
+    "boom.jpg",
+    "boom_.jpg",
+    "boomschaduw.jpg",
+    "denneappel.jpg",
+    "eekhoorn_.jpg",
+    "eekhoorn_schaduw_.jpg",
+    "egel3.jpg",
+    "egel_schaduw.jpg",
+    "eikel.jpg",
+    "favicon.ico",
+    "groot_.jpg",
+    "harken.jpg",
+    "herfst01.jclic",
+    "herfst01.jclic.js",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "klein_.jpg",
+    "kleinst_.jpg",
+    "paddenstoel23.jpg",
+    "paddenstoelschaduw_.jpg",
+    "pictogroot_naar_klein_.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel_1.jpg"
+  ]
+}
