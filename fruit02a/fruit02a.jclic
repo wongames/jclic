@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="fruit02a" version="0.1.3">
+ <settings>
+  <title>Fruit02a</title>
+  <revision description="created" date="8/9/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Chronologische volgorde" delay="1" />
+  <item name="memory" delay="1" />
+  <item name="rij" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="groot naar klein" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="Chronologische volgorde" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Chronologische volgorde: Mmm een lekkere appel!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondfruit.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausefruit.mp3" />
+     <sound id="finishedOk" file="applausefruit.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="volgorde1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memory" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondfruit.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausefruit.mp3" />
+     <sound id="finishedOk" file="applausefruit.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="aardbei.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ananas.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appelsien.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="banaan .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kersen .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="peer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="watermeloen .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="druiven.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="rij" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="kruis.jpg" type="initial">
+     <style />
+     <p>Wat past er NIET in het rijtje?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondfruit.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausefruit.mp3" />
+     <sound id="finishedOk" file="applausefruit.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="7" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell id="0" image="aardbei.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="ananas.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="appel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="appelsien.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="banaan .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="druiven.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="madeliefje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel pitjes tel je in het klokkenhuis?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondfruit.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausefruit.mp3" />
+     <sound id="finishedOk" file="applausefruit.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="tellenappela1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tellenappel2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tellenappel3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tellenappel4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tellenappel5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tellenappel6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell imgAlign="right,middle" image="cijfer.jpg">
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>1</p>
+    </cell>
+    <cell imgAlign="right,middle" image="cijfer.jpg">
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>2</p>
+    </cell>
+    <cell imgAlign="right,middle" image="cijfer.jpg">
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell imgAlign="right,middle" image="cijfer.jpg">
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>4</p>
+    </cell>
+    <cell imgAlign="right,middle" image="cijfer.jpg">
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>5</p>
+    </cell>
+    <cell imgAlign="right,middle" image="cijfer.jpg">
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>6</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="pictogroot naar klein .jpg" type="initial">
+     <style />
+     <p>Van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondfruit.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausefruit.mp3" />
+     <sound id="finishedOk" file="applausefruit.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="ananasgroot.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ananasklein.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ananaskleinst.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="aardbei.jpg" file="aardbei.jpg" />
+  <media name="achtergrondfruit.jpg" file="achtergrondfruit.jpg" />
+  <media name="ananas.jpg" file="ananas.jpg" />
+  <media name="ananasgroot.jpg" file="ananasgroot.jpg" />
+  <media name="ananasklein.jpg" file="ananasklein.jpg" />
+  <media name="ananaskleinst.jpg" file="ananaskleinst.jpg" />
+  <media name="appel.jpg" file="appel.jpg" />
+  <media name="appelsien.jpg" file="appelsien.jpg" />
+  <media name="banaan .jpg" file="banaan_.jpg" />
+  <media name="cijfer.jpg" file="cijfer.jpg" />
+  <media name="druiven.jpg" file="druiven.jpg" />
+  <media name="kersen .jpg" file="kersen_.jpg" />
+  <media name="kruis.jpg" file="kruis.jpg" />
+  <media name="madeliefje.jpg" file="madeliefje.jpg" />
+  <media name="peer.jpg" file="peer.jpg" />
+  <media name="pictogroot naar klein .jpg" file="pictogroot_naar_klein_.jpg" />
+  <media name="tellenappel2.jpg" file="tellenappel2.jpg" />
+  <media name="tellenappel3.jpg" file="tellenappel3.jpg" />
+  <media name="tellenappel4.jpg" file="tellenappel4.jpg" />
+  <media name="tellenappel5.jpg" file="tellenappel5.jpg" />
+  <media name="tellenappel6.jpg" file="tellenappel6.jpg" />
+  <media name="tellenappela1.jpg" file="tellenappela1.jpg" />
+  <media name="volgorde1.jpg" file="volgorde1.jpg" />
+  <media name="volgorde2.jpg" file="volgorde2.jpg" />
+  <media name="volgorde3.jpg" file="volgorde3.jpg" />
+  <media name="volgorde4.jpg" file="volgorde4.jpg" />
+  <media name="watermeloen .jpg" file="watermeloen_.jpg" />
+  <media name="applausefruit.mp3" file="applausefruit.mp3" />
+ </mediaBag>
+</JClicProject>
+

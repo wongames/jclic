@@ -1,0 +1,59 @@
+{
+  "title": "Fruit02a",
+  "date": "9-8-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "fruit02a.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 33,
+  "totalSize": 1209157,
+  "files": [
+    "aardbei.jpg",
+    "achtergrondfruit.jpg",
+    "ananas.jpg",
+    "ananasgroot.jpg",
+    "ananasklein.jpg",
+    "ananaskleinst.jpg",
+    "appel.jpg",
+    "appelsien.jpg",
+    "applausefruit.mp3",
+    "banaan_.jpg",
+    "cijfer.jpg",
+    "druiven.jpg",
+    "favicon.ico",
+    "fruit02a.jclic",
+    "fruit02a.jclic.js",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "kersen_.jpg",
+    "kruis.jpg",
+    "madeliefje.jpg",
+    "peer.jpg",
+    "pictogroot_naar_klein_.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "tellenappel2.jpg",
+    "tellenappel3.jpg",
+    "tellenappel4.jpg",
+    "tellenappel5.jpg",
+    "tellenappel6.jpg",
+    "tellenappela1.jpg",
+    "volgorde1.jpg",
+    "volgorde2.jpg",
+    "volgorde3.jpg",
+    "volgorde4.jpg",
+    "watermeloen_.jpg"
+  ]
+}
