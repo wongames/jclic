@@ -1,0 +1,62 @@
+{
+  "title": "Griezelen01",
+  "date": "11-8-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "griezelen01.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 36,
+  "totalSize": 996966,
+  "files": [
+    "bezem_.jpg",
+    "favicon.ico",
+    "getalbeeld1.jpg",
+    "getalbeeld2.jpg",
+    "getalbeeld3.jpg",
+    "griezelen01.jclic",
+    "griezelen01.jclic.js",
+    "griezelenachtergrond.jpg",
+    "griezelenapplause8.mp3",
+    "heks_.jpg",
+    "heksenhoed_.jpg",
+    "heksenketel_.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "katgroot.jpg",
+    "katklein.jpg",
+    "katkleinst.jpg",
+    "pictogroot_naar_klein_.jpg",
+    "pompoen1.jpg",
+    "pompoen2.jpg",
+    "pompoen3.jpg",
+    "pompoen_.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel1.jpg",
+    "schaduw_bezem_.jpg",
+    "schaduw_heks.jpg",
+    "schaduw_heksenhoed.jpg",
+    "schaduw_heksenketel_.jpg",
+    "schaduw_kat_.jpg",
+    "schaduw_pompoen.jpg",
+    "schaduw_spinjpg.jpg",
+    "schaduw_spok.jpg",
+    "schaduw_vleemruis_.jpg",
+    "spin_.jpg",
+    "spook_.jpg",
+    "vleermuis_.jpg",
+    "zwarte_kat_.jpg"
+  ]
+}
