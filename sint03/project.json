@@ -1,0 +1,63 @@
+{
+  "title": "Sint03",
+  "date": "13-8-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "sint03.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 37,
+  "totalSize": 2019005,
+  "files": [
+    "achtergrondsint.jpg",
+    "favicon.ico",
+    "friet_rijm.jpg",
+    "groot_.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "klein__.jpg",
+    "kleiner__.jpg",
+    "kleinst2__.jpg",
+    "kleinst__.jpg",
+    "paard_rijm.jpg",
+    "paardcijfer.jpg",
+    "patr_3.jpg",
+    "patr_4.jpg",
+    "patr__5_.jpg",
+    "patr__5_rood_.jpg",
+    "patr__gblauw_.jpg",
+    "patr__geel_.jpg",
+    "patr__groenn_.jpg",
+    "picto_groot_naar_klein_.jpg",
+    "piet_rijm.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel_3.jpg",
+    "sint03.jclic",
+    "sint03.jclic.js",
+    "sint_rijm.jpg",
+    "sintapplause.mp3",
+    "slak_rijm.jpg",
+    "taart_rijm.jpg",
+    "wind_rijm.jpg",
+    "wortels1.jpg",
+    "wortels2.jpg",
+    "wortels3.jpg",
+    "wortels4.jpg",
+    "wortels5.jpg",
+    "wortels6jpg.jpg",
+    "wortels7.jpg",
+    "zak_rijm.jpg"
+  ]
+}
