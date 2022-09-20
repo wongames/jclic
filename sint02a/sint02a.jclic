@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="sint02a" version="0.1.3">
+ <settings>
+  <title>Sint02a</title>
+  <revision description="created" date="8/13/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="wat hoort bij wie?" delay="1" />
+  <item name="schaduw" delay="1" />
+  <item name="schoorsteen" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="puzzel" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@associations.ComplexAssociation" name="wat hoort bij wie?" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Wat hoort bij sint? Of piet of paard? </p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="5" cols="3" cellWidth="216.0" cellHeight="136.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell id="2" image="baard 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="boek  33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="broek33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="cadeau l33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="handschoen 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="hoefijzer l33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="klontje l33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="mantel 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="mijter 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="muts33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="ring 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="veer 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="staf  33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="wortel33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="zak33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="510.0" cellHeight="181.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="paard 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="PIET 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sint 33.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schaduw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek de juiste schaduw.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="boek 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paard 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ring 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schoen 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sint 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="staf 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stoomboot 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwarte piet.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="boek 2schaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 2 schaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paard 2 schaduw jpg.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ring 2 schaduw jpg.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schoen 2 schaduw .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sint 2 schaduw jpg.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="staf 2 scahduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stoomboot 2 schaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwarte piet schaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schoorsteen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke zwarte piet zit vast in de schoorsteen?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="haard 1.jpg">
+     <style>
+      <color background="0x00FFFF" />
+     </style>
+    </cell>
+    <cell image="haard 2 .jpg">
+     <style>
+      <color background="0x00FFFF" />
+     </style>
+    </cell>
+    <cell image="haard 3 .jpg">
+     <style>
+      <color background="0x00FFFF" />
+     </style>
+    </cell>
+    <cell image="haard 4 .jpg">
+     <style>
+      <color background="0x00FFFF" />
+     </style>
+    </cell>
+    <cell image="haard 5.jpg">
+     <style>
+      <color background="0x00FFFF" />
+     </style>
+    </cell>
+    <cell image="haard 6.jpg">
+     <style>
+      <color background="0x00FFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="haard piet 1l.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haard piet 2 .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haard piet 3 .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haard piet 4 .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haard piet 5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haard piet 6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel cadeautjes tel je	?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="cadeau 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 2A.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cadeau 6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell txtAlign="right,bottom" image="getalbeeld1.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>1</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="getalbeeld2.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>2</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="getalbeeld4.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>4</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="getalbeeld3.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="getalbeeld5.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>5</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="getalbeeld6.jpg">
+     <style>
+      <font family="Arial" size="26" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>6</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondsint.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="SINTapplause.mp3" />
+     <sound id="finishedOk" file="SINTapplause.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel4.jpg">
+    <style />
+    <shaper class="@TriangularJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondsint.jpg" file="achtergrondsint.jpg" />
+  <media name="baard 33.jpg" file="baard_33.jpg" />
+  <media name="boek  33.jpg" file="boek__33.jpg" />
+  <media name="boek 2.jpg" file="boek_2.jpg" />
+  <media name="boek 2schaduw.jpg" file="boek_2schaduw.jpg" />
+  <media name="broek33.jpg" file="broek33.jpg" />
+  <media name="cadeau 1.jpg" file="cadeau_1.jpg" />
+  <media name="cadeau 2 schaduw.jpg" file="cadeau_2_schaduw.jpg" />
+  <media name="cadeau 2.jpg" file="cadeau_2.jpg" />
+  <media name="cadeau 2A.jpg" file="cadeau_2a.jpg" />
+  <media name="cadeau 3.jpg" file="cadeau_3.jpg" />
+  <media name="cadeau 4.jpg" file="cadeau_4.jpg" />
+  <media name="cadeau 5.jpg" file="cadeau_5.jpg" />
+  <media name="cadeau 6.jpg" file="cadeau_6.jpg" />
+  <media name="cadeau l33.jpg" file="cadeau_l33.jpg" />
+  <media name="getalbeeld1.jpg" file="getalbeeld1.jpg" />
+  <media name="getalbeeld2.jpg" file="getalbeeld2.jpg" />
+  <media name="getalbeeld3.jpg" file="getalbeeld3.jpg" />
+  <media name="getalbeeld4.jpg" file="getalbeeld4.jpg" />
+  <media name="getalbeeld5.jpg" file="getalbeeld5.jpg" />
+  <media name="getalbeeld6.jpg" file="getalbeeld6.jpg" />
+  <media name="haard 1.jpg" file="haard_1.jpg" />
+  <media name="haard 2 .jpg" file="haard_2_.jpg" />
+  <media name="haard 3 .jpg" file="haard_3_.jpg" />
+  <media name="haard 4 .jpg" file="haard_4_.jpg" />
+  <media name="haard 5.jpg" file="haard_5.jpg" />
+  <media name="haard 6.jpg" file="haard_6.jpg" />
+  <media name="haard piet 1l.jpg" file="haard_piet_1l.jpg" />
+  <media name="haard piet 2 .jpg" file="haard_piet_2_.jpg" />
+  <media name="haard piet 3 .jpg" file="haard_piet_3_.jpg" />
+  <media name="haard piet 4 .jpg" file="haard_piet_4_.jpg" />
+  <media name="haard piet 5.jpg" file="haard_piet_5.jpg" />
+  <media name="haard piet 6.jpg" file="haard_piet_6.jpg" />
+  <media name="handschoen 33.jpg" file="handschoen_33.jpg" />
+  <media name="hoefijzer l33.jpg" file="hoefijzer_l33.jpg" />
+  <media name="klontje l33.jpg" file="klontje_l33.jpg" />
+  <media name="mantel 33.jpg" file="mantel_33.jpg" />
+  <media name="mijter 33.jpg" file="mijter_33.jpg" />
+  <media name="muts33.jpg" file="muts33.jpg" />
+  <media name="paard 2 schaduw jpg.jpg" file="paard_2_schaduw_jpg.jpg" />
+  <media name="paard 2.jpg" file="paard_2.jpg" />
+  <media name="paard 33.jpg" file="paard_33.jpg" />
+  <media name="PIET 33.jpg" file="piet_33.jpg" />
+  <media name="puzzel4.jpg" file="puzzel4.jpg" />
+  <media name="ring 2 schaduw jpg.jpg" file="ring_2_schaduw_jpg.jpg" />
+  <media name="ring 2.jpg" file="ring_2.jpg" />
+  <media name="ring 33.jpg" file="ring_33.jpg" />
+  <media name="schoen 2 schaduw .jpg" file="schoen_2_schaduw_.jpg" />
+  <media name="schoen 2.jpg" file="schoen_2.jpg" />
+  <media name="sint 2 schaduw jpg.jpg" file="sint_2_schaduw_jpg.jpg" />
+  <media name="sint 2.jpg" file="sint_2.jpg" />
+  <media name="sint 33.jpg" file="sint_33.jpg" />
+  <media name="staf  33.jpg" file="staf__33.jpg" />
+  <media name="staf 2 scahduw.jpg" file="staf_2_scahduw.jpg" />
+  <media name="staf 2.jpg" file="staf_2.jpg" />
+  <media name="stoomboot 2 schaduw.jpg" file="stoomboot_2_schaduw.jpg" />
+  <media name="stoomboot 2.jpg" file="stoomboot_2.jpg" />
+  <media name="veer 33.jpg" file="veer_33.jpg" />
+  <media name="wortel33.jpg" file="wortel33.jpg" />
+  <media name="zak33.jpg" file="zak33.jpg" />
+  <media name="zwarte piet schaduw.jpg" file="zwarte_piet_schaduw.jpg" />
+  <media name="zwarte piet.jpg" file="zwarte_piet.jpg" />
+  <media name="SINTapplause.mp3" file="sintapplause.mp3" />
+ </mediaBag>
+</JClicProject>
+
