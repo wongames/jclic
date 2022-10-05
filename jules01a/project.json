@@ -1,0 +1,60 @@
+{
+  "title": "Jules01a",
+  "date": "2-10-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01a.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 34,
+  "totalSize": 1745252,
+  "files": [
+    "applausejules_.mp3",
+    "blauw.jpg",
+    "boekentasblauw.jpg",
+    "boekentasgeel.jpg",
+    "boekentasgroen.jpg",
+    "boekentasjuleskleur.jpg",
+    "boekentasjulesschaduw.jpg",
+    "boekentasrood.jpg",
+    "drinkbuskleur.jpg",
+    "drinkbusschaduw.jpg",
+    "favicon.ico",
+    "geel.jpg",
+    "groen.jpg",
+    "hoek1.jpg",
+    "hoek2.jpg",
+    "hoek3.jpg",
+    "hoek4.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01a.jclic",
+    "jules01a.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesappelkleur.jpg",
+    "julesappelschaduw.jpg",
+    "julesbrooddooskleur.jpg",
+    "julesbrooddoosschaduw.jpg",
+    "juleskleur.jpg",
+    "juleskleurblauw.jpg",
+    "juleskleurgeel.jpg",
+    "juleskleurgroen.jpg",
+    "juleskleurrood.jpg",
+    "julesschaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzelschool.jpg",
+    "rood.jpg"
+  ]
+}
