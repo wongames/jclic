@@ -1,0 +1,49 @@
+{
+  "title": "Jules01b",
+  "date": "2-10-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01b.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 23,
+  "totalSize": 562495,
+  "files": [
+    "appel.jpg",
+    "appelschaduw.jpg",
+    "appelsien.jpg",
+    "appelsienschaduw.jpg",
+    "applausejules_.mp3",
+    "banaan_.jpg",
+    "banaanschaduw_.jpg",
+    "favicon.ico",
+    "geleappel.jpg",
+    "groeneappel.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01b.jclic",
+    "jules01b.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "juleseetappel.jpg",
+    "juleseetappelgeel.jpg",
+    "juleseetappelgroen.jpg",
+    "peer.jpg",
+    "peerschaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzelfruit.jpg",
+    "puzzelwatermeloen.jpg",
+    "rodeappel.jpg"
+  ]
+}
