@@ -1,0 +1,58 @@
+{
+  "title": "jules01c",
+  "date": "9-10-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01c.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 32,
+  "totalSize": 1356036,
+  "files": [
+    "applausejules_.mp3",
+    "blaadjes.jpg",
+    "eekhoorn.jpg",
+    "egel.jpg",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01c.jclic",
+    "jules01c.jclic.js",
+    "jules_paraplu.jpg",
+    "jules_paraplublauw_.jpg",
+    "jules_parapluboranje_.jpg",
+    "jules_paraplugeel.jpg",
+    "jules_paraplugroen.jpg",
+    "jules_paraplupaars_.jpg",
+    "julesachtergrondjpg.jpg",
+    "julesbos.jpg",
+    "paddenstoel.jpg",
+    "paddenstoelbruin.jpg",
+    "paddenstoelgeel.jpg",
+    "paddenstoelroos.jpg",
+    "paraplu_blauw.jpg",
+    "paraplu_geel.jpg",
+    "paraplu_groen.jpg",
+    "paraplu_oranje.jpg",
+    "paraplu_paars.jpg",
+    "paraplu_rood.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzeljulesherfst.jpg",
+    "schaduwblaadjes.jpg",
+    "schaduweekhoorn.jpg",
+    "schaduwegel.jpg",
+    "schaduwpaddenstoel.jpg"
+  ]
+}
