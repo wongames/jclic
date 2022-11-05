@@ -1,0 +1,52 @@
+{
+  "title": "jules01d",
+  "date": "13-10-22",
+  "description": {},
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01d.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 28,
+  "totalSize": 4212499,
+  "files": [
+    "applausejules_.mp3",
+    "bal_.jpg",
+    "boot_.jpg",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01d.jclic",
+    "jules01d.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesball.jpg",
+    "julesboot.jpg",
+    "juleskonijnl.jpg",
+    "julesmijter.jpg",
+    "julesmijterkleur.jpg",
+    "julestrommel.jpg",
+    "konijn.jpg",
+    "paars.jpg",
+    "piet_kleur_.jpg",
+    "piet_schaduw_.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "schaduwjulesmijter-resized.jpg",
+    "schoen_met_tekening.jpg",
+    "schoen_met_tekening_kleur.jpg",
+    "schoen_met_tekening_schaduw.jpg",
+    "sint.jpg",
+    "sint_en_pietjpg.jpg",
+    "sint_kleur.jpg",
+    "sint_schaduw.jpg",
+    "trommel.jpg"
+  ]
+}
