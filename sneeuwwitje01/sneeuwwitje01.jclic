@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="sneeuwwitje01" version="0.1.3">
+ <settings>
+  <title>Sneeuwwitje01</title>
+  <revision description="created" date="10/23/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="schaduw" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="puzzel6" delay="1" />
+  <item name="kleur" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="1achtergrondsneeuwwitje-resized.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausesneeuwwitje.mp3" />
+     <sound id="finishedOk" file="applausesneeuwwitje.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="sneeuwwitje.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="spiegel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bozekoningin.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="prins.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="doc.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schaduw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek de juiste schaduw.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="1achtergrondsneeuwwitje-resized.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausesneeuwwitje.mp3" />
+     <sound id="finishedOk" file="applausesneeuwwitje.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="sneeuwwitje .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="grumpy kleur.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kleur 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kleur 3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kleur 6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kleur 5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="sneeuwwitje zwart  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="grumpy zwart.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwart.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwart 3a.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwart 6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwart 5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel dwergen tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="1achtergrondsneeuwwitje-resized.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausesneeuwwitje.mp3" />
+     <sound id="finishedOk" file="applausesneeuwwitje.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="1dwerg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2dwerg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3dwerg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="1achtergrondsneeuwwitje-resized.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausesneeuwwitje.mp3" />
+     <sound id="finishedOk" file="applausesneeuwwitje.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="2" border="true" image="puzzel6.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="2" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welk klokhuis hoort bij de appel?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="1achtergrondsneeuwwitje-resized.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausesneeuwwitje.mp3" />
+     <sound id="finishedOk" file="applausesneeuwwitje.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="appel blauw 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel geel 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel groen 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel oranje 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel paars 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel rood 12.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="appel blauw 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel geel 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel groen 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel oranje 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel paars 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="appel rood 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1.jpg" file="1.jpg" />
+  <media name="1achtergrondsneeuwwitje-resized.jpg" file="1achtergrondsneeuwwitje-resized.jpg" />
+  <media name="1dwerg.jpg" file="1dwerg.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="2dwerg.jpg" file="2dwerg.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="3dwerg.jpg" file="3dwerg.jpg" />
+  <media name="appel blauw 1.jpg" file="appel_blauw_1.jpg" />
+  <media name="appel blauw 2.jpg" file="appel_blauw_2.jpg" />
+  <media name="appel geel 1.jpg" file="appel_geel_1.jpg" />
+  <media name="appel geel 2.jpg" file="appel_geel_2.jpg" />
+  <media name="appel groen 1.jpg" file="appel_groen_1.jpg" />
+  <media name="appel groen 2.jpg" file="appel_groen_2.jpg" />
+  <media name="appel oranje 1.jpg" file="appel_oranje_1.jpg" />
+  <media name="appel oranje 2.jpg" file="appel_oranje_2.jpg" />
+  <media name="appel paars 1.jpg" file="appel_paars_1.jpg" />
+  <media name="appel paars 2.jpg" file="appel_paars_2.jpg" />
+  <media name="appel rood 1.jpg" file="appel_rood_1.jpg" />
+  <media name="appel rood 12.jpg" file="appel_rood_12.jpg" />
+  <media name="appel.jpg" file="appel.jpg" />
+  <media name="bozekoningin.jpg" file="bozekoningin.jpg" />
+  <media name="doc.jpg" file="doc.jpg" />
+  <media name="grumpy kleur.jpg" file="grumpy_kleur.jpg" />
+  <media name="grumpy zwart.jpg" file="grumpy_zwart.jpg" />
+  <media name="kleur 2.jpg" file="kleur_2.jpg" />
+  <media name="kleur 3.jpg" file="kleur_3.jpg" />
+  <media name="kleur 5.jpg" file="kleur_5.jpg" />
+  <media name="kleur 6.jpg" file="kleur_6.jpg" />
+  <media name="prins.jpg" file="prins.jpg" />
+  <media name="puzzel6.jpg" file="puzzel6.jpg" />
+  <media name="sneeuwwitje .jpg" file="sneeuwwitje_.jpg" />
+  <media name="sneeuwwitje zwart  .jpg" file="sneeuwwitje_zwart__.jpg" />
+  <media name="sneeuwwitje.jpg" file="sneeuwwitje.jpg" />
+  <media name="spiegel.jpg" file="spiegel.jpg" />
+  <media name="zwart 3a.jpg" file="zwart_3a.jpg" />
+  <media name="zwart 5.jpg" file="zwart_5.jpg" />
+  <media name="zwart 6.jpg" file="zwart_6.jpg" />
+  <media name="zwart.jpg" file="zwart.jpg" />
+  <media name="applausesneeuwwitje.mp3" file="applausesneeuwwitje.mp3" />
+ </mediaBag>
+</JClicProject>
+
