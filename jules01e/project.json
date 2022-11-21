@@ -1,0 +1,50 @@
+{
+  "title": "jules01e",
+  "date": "14-11-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01e.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 24,
+  "totalSize": 3055023,
+  "files": [
+    "applausejules_.mp3",
+    "cadeau.jpg",
+    "cadeaukleur.jpg",
+    "cadeauschaduw.jpg",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01e.jclic",
+    "jules01e.jclic.js",
+    "jules_kerstboom.jpg",
+    "jules_kerstboom_-_kopie.jpg",
+    "julesachtergrondjpg.jpg",
+    "juleskerstman.jpg",
+    "juleskerstmanblauw.jpg",
+    "juleskerstmangeel.jpg",
+    "juleskerstmangroen.jpg",
+    "juleskerstmankleur.jpg",
+    "juleskerstmanrood.jpg",
+    "juleskerstmanschaduw.jpg",
+    "kerstboomkleur.jpg",
+    "kerstboomschaduw.jpg",
+    "mariekerstbal.jpg",
+    "mariekerstbal2.jpg",
+    "mariekerstbalschaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
