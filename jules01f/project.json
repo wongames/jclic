@@ -1,0 +1,53 @@
+{
+  "title": "Jules01f",
+  "date": "13-11-22",
+  "description": {},
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01f.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 29,
+  "totalSize": 2628132,
+  "files": [
+    "applausejules_.mp3",
+    "cowboyhoed.jpg",
+    "cowboyhoedschaduw.jpg",
+    "favicon.ico",
+    "hoed.jpg",
+    "hoedschaduw.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01f.jclic",
+    "jules01f.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesbgeel.jpg",
+    "julesbgroen.jpg",
+    "julesblauw.jpg",
+    "julesclown.jpg",
+    "julesrood.jpg",
+    "julesverkleed.jpg",
+    "kroon.jpg",
+    "kroonschaduw.jpg",
+    "marie_verkleed.jpg",
+    "mutsblauw.jpg",
+    "mutsgeel.jpg",
+    "mutsgroen.jpg",
+    "mutsrood.jpg",
+    "narrenkap.jpg",
+    "narrenkapschauw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzelcarnaval.jpg",
+    "puzzelcarnaval2.jpg",
+    "trommel.jpg"
+  ]
+}
