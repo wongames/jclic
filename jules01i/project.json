@@ -1,0 +1,62 @@
+{
+  "title": "jules01i",
+  "date": "14-11-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01i.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 36,
+  "totalSize": 4683114,
+  "files": [
+    "applausejules_.mp3",
+    "blauweballon.jpg",
+    "cadeau.jpg",
+    "cadeaukleur.jpg",
+    "cadeauschaduw.jpg",
+    "favicon.ico",
+    "geleballon.jpg",
+    "groeneballon.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01i.jclic",
+    "jules01i.jclic.js",
+    "jules_kroonblauw.jpg",
+    "jules_kroongeel.jpg",
+    "jules_kroongroen.jpg",
+    "jules_kroonrood.jpg",
+    "julesachtergrondjpg.jpg",
+    "julesblauw2.jpg",
+    "julesgeel2.jpg",
+    "julesgroen2.jpg",
+    "julesmetblauweballon.jpg",
+    "julesmetgeleballon.jpg",
+    "julesmetgroeneballon.jpg",
+    "julesmetrodeballon.jpg",
+    "julesrood2.jpg",
+    "kroonkleur.jpg",
+    "kroonschaduw.jpg",
+    "marie_jarig.jpg",
+    "marie_jarig_schaduw.jpg",
+    "marie_jarigwit.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel.jpg",
+    "rodeballon.jpg",
+    "taart.jpg",
+    "taartkleur.jpg",
+    "taartschaduw.jpg",
+    "vlaggetjes.jpg"
+  ]
+}
