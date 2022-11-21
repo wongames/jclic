@@ -1,0 +1,54 @@
+{
+  "title": "jules01g",
+  "date": "13-11-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01g.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 28,
+  "totalSize": 1343742,
+  "files": [
+    "applausejules_.mp3",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules.jpg",
+    "jules01g.jclic",
+    "jules01g.jclic.js",
+    "jules_mandje_blauw.jpg",
+    "jules_mandje_geel.jpg",
+    "jules_mandje_groen.jpg",
+    "jules_mandje_rood.jpg",
+    "julesachtergrondjpg.jpg",
+    "kip.jpg",
+    "kip_schaduw.jpg",
+    "kuikentje.jpg",
+    "kuikentje_schaduw.jpg",
+    "mandje_paasei.jpg",
+    "mandje_paasei_schaduw.jpg",
+    "paasei.jpg",
+    "paasei_blauw.jpg",
+    "paasei_geel.jpg",
+    "paasei_groen.jpg",
+    "paasei_rood.jpg",
+    "paasei_schaduw.jpg",
+    "paasklok.jpg",
+    "paasklok_schaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel2stukken.jpg",
+    "puzzel_3.jpg"
+  ]
+}
