@@ -1,0 +1,53 @@
+{
+  "title": "jules01m",
+  "date": "29-12-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01m.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 27,
+  "totalSize": 2515420,
+  "files": [
+    "applausejules_.mp3",
+    "blauw.jpg",
+    "favicon.ico",
+    "geel.jpg",
+    "gezin.jpg",
+    "groen.jpg",
+    "hartjeblauw.jpg",
+    "hartjegeel.jpg",
+    "hartjegroen.jpg",
+    "hartjerood.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules.jpg",
+    "jules01m.jclic",
+    "jules01m.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesmethartjes.jpg",
+    "julesschaduw.jpg",
+    "mama2.jpg",
+    "mamaschaduw.jpg",
+    "marie.jpg",
+    "marieschaduw.jpg",
+    "papa.jpg",
+    "papaschaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel.jpg",
+    "puzzel2.jpg",
+    "rood.jpg"
+  ]
+}
