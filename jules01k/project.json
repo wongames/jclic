@@ -1,0 +1,57 @@
+{
+  "title": "jules01k",
+  "date": "29-12-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01k.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 31,
+  "totalSize": 1261179,
+  "files": [
+    "applausejules_.mp3",
+    "boer2.jpg",
+    "favicon.ico",
+    "geit.jpg",
+    "geitblatengeluid.mp3",
+    "geitschaduw.jpg",
+    "geluidblauw.jpg",
+    "geluidgeel.jpg",
+    "geluidgroen.jpg",
+    "geluidkip.mp3",
+    "geluidpaard.mp3",
+    "geluidrood.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01k.jclic",
+    "jules01k.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesmandschaduw.jpg",
+    "julesmandwit.jpg",
+    "kip.jpg",
+    "kip__2_.jpg",
+    "kipjulesblauw.jpg",
+    "kipjulesgeel.jpg",
+    "kipjulesgroen.jpg",
+    "kipjulesrood.jpg",
+    "kipschaduw.jpg",
+    "koe_geluid.mp3",
+    "koekleur.jpg",
+    "koeschaduw.jpg",
+    "paardkleur.jpg",
+    "prentkoe.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
