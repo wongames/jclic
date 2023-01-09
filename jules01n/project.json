@@ -1,0 +1,55 @@
+{
+  "title": "jules01n",
+  "date": "29-12-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01n.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 29,
+  "totalSize": 2613189,
+  "files": [
+    "applausejules_.mp3",
+    "dokter.jpg",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01n.jclic",
+    "jules01n.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesdokterstas.jpg",
+    "julesdokterstasblauw.jpg",
+    "julesdokterstasgeel.jpg",
+    "julesdokterstasgroen.jpg",
+    "julesdokterstasrood.jpg",
+    "julesziekenhuisbed.jpg",
+    "naamloos.jpg",
+    "neus.jpg",
+    "pleister1.jpg",
+    "pleister1a.jpg",
+    "pleister2.jpg",
+    "pleister2a.jpg",
+    "pleister3.jpg",
+    "pleister3a.jpg",
+    "pleister4.jpg",
+    "pleister4a.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "rode_vlekjes.jpg",
+    "stethoscoopblauw.jpg",
+    "stethoscoopgeel.jpg",
+    "stethoscoopgroen.jpg",
+    "stethoscooprood.jpg"
+  ]
+}
