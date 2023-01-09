@@ -1,0 +1,51 @@
+{
+  "title": "jules01j",
+  "date": "28-12-22",
+  "description": {},
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01j.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 27,
+  "totalSize": 1873683,
+  "files": [
+    "applausejules_.mp3",
+    "beer.jpg",
+    "blauwbed.jpg",
+    "blauwlaken.jpg",
+    "favicon.ico",
+    "geelbed.jpg",
+    "geellaken.jpg",
+    "groenbed.jpg",
+    "groenlaken.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01j.jclic",
+    "jules01j.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "kip.jpg",
+    "kipschaduw.jpg",
+    "knuffelkonijn.jpg",
+    "knuffelkonijnschaduw.jpg",
+    "marieknuffel.jpg",
+    "memo1.jpg",
+    "pop.jpg",
+    "popschaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzelknuffels.jpg",
+    "roodbed.jpg",
+    "roodlaken.jpg",
+    "witteachtergrondknuffels.jpg",
+    "witteachtergrondknuffelsschaduw.jpg"
+  ]
+}
