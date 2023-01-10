@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="restaurant03" version="0.1.3">
+ <settings>
+  <title>restaurant03</title>
+  <revision description="created" date="12/25/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="rijmen" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="kleur" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondrestaurant.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauserestaurant.mp3" />
+     <sound id="finishedOk" file="applauserestaurant.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell image="bord.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="eten  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kok .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lepel .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="menukaart.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="mes.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ober  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vork.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="koken .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="restaurant .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tafel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="spaghetti  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="rijmen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Wat rijmt er op ..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondrestaurant.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauserestaurant.mp3" />
+     <sound id="finishedOk" file="applauserestaurant.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell txtAlign="right,bottom" image="kok .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>KOK</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="mes.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>MES</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="glas.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>GLAS</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="bord.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>BORD</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="tafel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>TAFEL</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="brood.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>BROOD</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell txtAlign="right,bottom" image="sok.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SOK</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="flesjpg.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>FLES</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="jas.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>JAS</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="schort.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SCHORT</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="wafel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>WAFEL</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="noot.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>NOOT</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel balletjes tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondrestaurant.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauserestaurant.mp3" />
+     <sound id="finishedOk" file="applauserestaurant.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="Counting Pizza_2.png">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Counting Pizza_3.png">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Counting Pizza_5.png">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Counting Pizza_6.png">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Counting Pizza_7.png">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Counting Pizza_8.png">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>2</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>5</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>6</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>7</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>8</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondrestaurant.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauserestaurant.mp3" />
+     <sound id="finishedOk" file="applauserestaurant.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="4" cols="3" border="true" image="puzzel3.jpg">
+    <style />
+    <shaper class="@TriangularJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke kleur hebben de kok, de bezorger en de klant?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondrestaurant.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauserestaurant.mp3" />
+     <sound id="finishedOk" file="applauserestaurant.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="4" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="blauw 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="geel1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="groen 1jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="blauw 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="geel2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="groen 2jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="blauw 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="geel3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="groen 3jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="blauw 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="geel4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" image="rood 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="groen 4jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" image="rood 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" image="rood 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" image="rood 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="blauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="GGEL.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groenjpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondrestaurant.jpg" file="achtergrondrestaurant.jpg" />
+  <media name="blauw 1.jpg" file="blauw_1.jpg" />
+  <media name="blauw 2.jpg" file="blauw_2.jpg" />
+  <media name="blauw 3.jpg" file="blauw_3.jpg" />
+  <media name="blauw 4.jpg" file="blauw_4.jpg" />
+  <media name="blauw.jpg" file="blauw.jpg" />
+  <media name="bord.jpg" file="bord.jpg" />
+  <media name="brood.jpg" file="brood.jpg" />
+  <media name="eten  .jpg" file="eten__.jpg" />
+  <media name="flesjpg.jpg" file="flesjpg.jpg" />
+  <media name="geel1.jpg" file="geel1.jpg" />
+  <media name="geel2.jpg" file="geel2.jpg" />
+  <media name="geel3.jpg" file="geel3.jpg" />
+  <media name="geel4.jpg" file="geel4.jpg" />
+  <media name="GGEL.jpg" file="ggel.jpg" />
+  <media name="glas.jpg" file="glas.jpg" />
+  <media name="groen 1jpg.jpg" file="groen_1jpg.jpg" />
+  <media name="groen 2jpg.jpg" file="groen_2jpg.jpg" />
+  <media name="groen 3jpg.jpg" file="groen_3jpg.jpg" />
+  <media name="groen 4jpg.jpg" file="groen_4jpg.jpg" />
+  <media name="groenjpg.jpg" file="groenjpg.jpg" />
+  <media name="jas.jpg" file="jas.jpg" />
+  <media name="kok .jpg" file="kok_.jpg" />
+  <media name="koken .jpg" file="koken_.jpg" />
+  <media name="lepel .jpg" file="lepel_.jpg" />
+  <media name="menukaart.jpg" file="menukaart.jpg" />
+  <media name="mes.jpg" file="mes.jpg" />
+  <media name="noot.jpg" file="noot.jpg" />
+  <media name="ober  .jpg" file="ober__.jpg" />
+  <media name="puzzel3.jpg" file="puzzel3.jpg" />
+  <media name="restaurant .jpg" file="restaurant_.jpg" />
+  <media name="rood .jpg" file="rood_.jpg" />
+  <media name="rood 1.jpg" file="rood_1.jpg" />
+  <media name="rood 2.jpg" file="rood_2.jpg" />
+  <media name="rood 3.jpg" file="rood_3.jpg" />
+  <media name="rood 4.jpg" file="rood_4.jpg" />
+  <media name="schort.jpg" file="schort.jpg" />
+  <media name="sok.jpg" file="sok.jpg" />
+  <media name="spaghetti  .jpg" file="spaghetti__.jpg" />
+  <media name="tafel.jpg" file="tafel.jpg" />
+  <media name="vork.jpg" file="vork.jpg" />
+  <media name="wafel.jpg" file="wafel.jpg" />
+  <media name="applauserestaurant.mp3" file="applauserestaurant.mp3" />
+  <media name="Counting Pizza_2.png" file="counting_pizza_2.png" />
+  <media name="Counting Pizza_3.png" file="counting_pizza_3.png" />
+  <media name="Counting Pizza_5.png" file="counting_pizza_5.png" />
+  <media name="Counting Pizza_6.png" file="counting_pizza_6.png" />
+  <media name="Counting Pizza_7.png" file="counting_pizza_7.png" />
+  <media name="Counting Pizza_8.png" file="counting_pizza_8.png" />
+ </mediaBag>
+</JClicProject>
+
