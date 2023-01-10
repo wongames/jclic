@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pasen02" version="0.1.3">
+ <settings>
+  <title>Pasen02</title>
+  <revision description="created" date="9/6/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="vormen" delay="1" />
+  <item name="patroo" delay="1" />
+  <item name="PUZZEL" delay="1" />
+  <item name="TELLEN" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="blauw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="grijs.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groen.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="oranje.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paars.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="wit.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="vormen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke wortel heeft dezelfde vorm als bij het konijn?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="cirkel konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="driehoek konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="hartje konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ovaal konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rechthoek  konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ruit konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trapezium konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vierkant konijn  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="cirkel .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="driehoek .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="hartje .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ovaal .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rechthoek .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ruit .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trapezium .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vierkant .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="patroo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welk ei, kuiken, kip en haan hebben hetzelfde patroon?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="4" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="ei .oranje streep.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="ei geel stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="ei gekleurde stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="haan oranje streep.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="haan geel stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="haan gekleurde stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="kip oranje streep.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="kip geel stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="kip gekleurde stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="kuiken oranje streep.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="kuiken geel stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="kuiken gekleurde stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image=".oranje streep.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel stipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="gekleurdestipjes.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="PUZZEL" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel HAAN.png">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="TELLEN" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel eitjes tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="1 eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2 eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3 eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="4 eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="5 eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="6 eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name=".oranje streep.jpg" file="_.oranje_streep.jpg" />
+  <media name="1 eierdoos .jpg" file="1_eierdoos_.jpg" />
+  <media name="1.jpg" file="1.jpg" />
+  <media name="2 eierdoos .jpg" file="2_eierdoos_.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3 eierdoos .jpg" file="3_eierdoos_.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="4 eierdoos .jpg" file="4_eierdoos_.jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="5 eierdoos .jpg" file="5_eierdoos_.jpg" />
+  <media name="5.jpg" file="5.jpg" />
+  <media name="6 eierdoos .jpg" file="6_eierdoos_.jpg" />
+  <media name="6.jpg" file="6.jpg" />
+  <media name="achtergrondpasen.jpg" file="achtergrondpasen.jpg" />
+  <media name="blauw.jpg" file="blauw.jpg" />
+  <media name="cirkel .jpg" file="cirkel_.jpg" />
+  <media name="cirkel konijn  .jpg" file="cirkel_konijn__.jpg" />
+  <media name="driehoek .jpg" file="driehoek_.jpg" />
+  <media name="driehoek konijn  .jpg" file="driehoek_konijn__.jpg" />
+  <media name="ei .oranje streep.jpg" file="ei_.oranje_streep.jpg" />
+  <media name="ei geel stipjes.jpg" file="ei_geel_stipjes.jpg" />
+  <media name="ei gekleurde stipjes.jpg" file="ei_gekleurde_stipjes.jpg" />
+  <media name="geel stipjes.jpg" file="geel_stipjes.jpg" />
+  <media name="geel.jpg" file="geel.jpg" />
+  <media name="gekleurdestipjes.jpg" file="gekleurdestipjes.jpg" />
+  <media name="grijs.jpg" file="grijs.jpg" />
+  <media name="groen.jpg" file="groen.jpg" />
+  <media name="haan geel stipjes.jpg" file="haan_geel_stipjes.jpg" />
+  <media name="haan gekleurde stipjes.jpg" file="haan_gekleurde_stipjes.jpg" />
+  <media name="haan oranje streep.jpg" file="haan_oranje_streep.jpg" />
+  <media name="hartje .jpg" file="hartje_.jpg" />
+  <media name="hartje konijn  .jpg" file="hartje_konijn__.jpg" />
+  <media name="kip geel stipjes.jpg" file="kip_geel_stipjes.jpg" />
+  <media name="kip gekleurde stipjes.jpg" file="kip_gekleurde_stipjes.jpg" />
+  <media name="kip oranje streep.jpg" file="kip_oranje_streep.jpg" />
+  <media name="kuiken geel stipjes.jpg" file="kuiken_geel_stipjes.jpg" />
+  <media name="kuiken gekleurde stipjes.jpg" file="kuiken_gekleurde_stipjes.jpg" />
+  <media name="kuiken oranje streep.jpg" file="kuiken_oranje_streep.jpg" />
+  <media name="oranje.jpg" file="oranje.jpg" />
+  <media name="ovaal .jpg" file="ovaal_.jpg" />
+  <media name="ovaal konijn  .jpg" file="ovaal_konijn__.jpg" />
+  <media name="paars.jpg" file="paars.jpg" />
+  <media name="rechthoek  konijn  .jpg" file="rechthoek__konijn__.jpg" />
+  <media name="rechthoek .jpg" file="rechthoek_.jpg" />
+  <media name="rood.jpg" file="rood.jpg" />
+  <media name="roos.jpg" file="roos.jpg" />
+  <media name="ruit .jpg" file="ruit_.jpg" />
+  <media name="ruit konijn  .jpg" file="ruit_konijn__.jpg" />
+  <media name="ster .jpg" file="ster_.jpg" />
+  <media name="ster konijn  .jpg" file="ster_konijn__.jpg" />
+  <media name="trapezium .jpg" file="trapezium_.jpg" />
+  <media name="trapezium konijn  .jpg" file="trapezium_konijn__.jpg" />
+  <media name="vierkant .jpg" file="vierkant_.jpg" />
+  <media name="vierkant konijn  .jpg" file="vierkant_konijn__.jpg" />
+  <media name="wit.jpg" file="wit.jpg" />
+  <media name="applausepasen.mp3" file="applausepasen.mp3" />
+  <media name="puzzel HAAN.png" file="puzzel_haan.png" />
+ </mediaBag>
+</JClicProject>
+
