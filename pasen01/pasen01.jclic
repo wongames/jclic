@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pasen01" version="0.1.3">
+ <settings>
+  <title>Pasen01</title>
+  <revision description="created" date="8/31/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Memo" delay="1" />
+  <item name="logische volgorde" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="kleur" delay="1" />
+  <item name="schaduw" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="Memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="kuiken.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haan.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ei.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kip op nest.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kippenhok.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="nest.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" border="true" image="puzzel kip .png">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="logische volgorde" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Logische volgorde van ei tot kuiken</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="volgorde 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Bij welke kip horen de gekleurde kuikentjes?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="blauwe kip .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel kip  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groen kip .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paars kip  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood kip  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos kip  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="blauwe kuiken .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel kuiken  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="groen kuiken .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paars kuiken  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood kuiken  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos kuiken  .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schaduw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek de juiste schaduw</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpasen.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepasen.mp3" />
+     <sound id="finishedOk" file="applausepasen.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="ei.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="eierdoos.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="haan.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kuiken.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="nest.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kuiken uit ei.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="schaduw ei .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw eierdoos .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw haan .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw kuiken .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw nest .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw kuiken uit ei .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondpasen.jpg" file="achtergrondpasen.jpg" />
+  <media name="blauwe kip .jpg" file="blauwe_kip_.jpg" />
+  <media name="blauwe kuiken .jpg" file="blauwe_kuiken_.jpg" />
+  <media name="ei.jpg" file="ei.jpg" />
+  <media name="eierdoos.jpg" file="eierdoos.jpg" />
+  <media name="geel kip  .jpg" file="geel_kip__.jpg" />
+  <media name="geel kuiken  .jpg" file="geel_kuiken__.jpg" />
+  <media name="groen kip .jpg" file="groen_kip_.jpg" />
+  <media name="groen kuiken .jpg" file="groen_kuiken_.jpg" />
+  <media name="haan.jpg" file="haan.jpg" />
+  <media name="kip op nest.jpg" file="kip_op_nest.jpg" />
+  <media name="kippenhok.jpg" file="kippenhok.jpg" />
+  <media name="kuiken uit ei.jpg" file="kuiken_uit_ei.jpg" />
+  <media name="kuiken.jpg" file="kuiken.jpg" />
+  <media name="nest.jpg" file="nest.jpg" />
+  <media name="paars kip  .jpg" file="paars_kip__.jpg" />
+  <media name="paars kuiken  .jpg" file="paars_kuiken__.jpg" />
+  <media name="rood kip  .jpg" file="rood_kip__.jpg" />
+  <media name="rood kuiken  .jpg" file="rood_kuiken__.jpg" />
+  <media name="roos kip  .jpg" file="roos_kip__.jpg" />
+  <media name="roos kuiken  .jpg" file="roos_kuiken__.jpg" />
+  <media name="schaduw ei .jpg" file="schaduw_ei_.jpg" />
+  <media name="schaduw eierdoos .jpg" file="schaduw_eierdoos_.jpg" />
+  <media name="schaduw haan .jpg" file="schaduw_haan_.jpg" />
+  <media name="schaduw kuiken .jpg" file="schaduw_kuiken_.jpg" />
+  <media name="schaduw kuiken uit ei .jpg" file="schaduw_kuiken_uit_ei_.jpg" />
+  <media name="schaduw nest .jpg" file="schaduw_nest_.jpg" />
+  <media name="volgorde 1.jpg" file="volgorde_1.jpg" />
+  <media name="volgorde 2.jpg" file="volgorde_2.jpg" />
+  <media name="volgorde 3.jpg" file="volgorde_3.jpg" />
+  <media name="volgorde 4.jpg" file="volgorde_4.jpg" />
+  <media name="applausepasen.mp3" file="applausepasen.mp3" />
+  <media name="puzzel kip .png" file="puzzel_kip_.png" />
+ </mediaBag>
+</JClicProject>
+
