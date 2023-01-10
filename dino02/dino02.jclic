@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="dino02" version="0.1.3">
+ <settings>
+  <title>Dino02</title>
+  <revision description="created" date="8/31/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="logische volgorde" delay="1" />
+  <item name="skelet" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="puzzel" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="dinoachtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausedino.mp3" />
+     <sound id="finishedOk" file="applausedino.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="dino (25).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (26).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (33).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (34).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (43).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (46).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (47).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (71).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (82).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="logische volgorde" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Logische volgorde van ei tot dino</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="dinoachtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausedino.mp3" />
+     <sound id="finishedOk" file="applausedino.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="volgorde1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="skelet" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek het juiste skelet bij de dinosaurus</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="dinoachtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausedino.mp3" />
+     <sound id="finishedOk" file="applausedino.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="5" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="dino (51).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (52).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (54).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (56).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (58).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="dino (50).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (53).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (55).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (57).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (59).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel dino eieren tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="dinoachtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausedino.mp3" />
+     <sound id="finishedOk" file="applausedino.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="dino (2).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (4).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (6).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (8).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (10).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (12).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="dino (3).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (5).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (7).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (9).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (11).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dino (13).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="dinoachtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausedino.mp3" />
+     <sound id="finishedOk" file="applausedino.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel2.jpg">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="dino (10).jpg" file="dino__10_.jpg" />
+  <media name="dino (11).jpg" file="dino__11_.jpg" />
+  <media name="dino (12).jpg" file="dino__12_.jpg" />
+  <media name="dino (13).jpg" file="dino__13_.jpg" />
+  <media name="dino (2).jpg" file="dino__2_.jpg" />
+  <media name="dino (25).jpg" file="dino__25_.jpg" />
+  <media name="dino (26).jpg" file="dino__26_.jpg" />
+  <media name="dino (3).jpg" file="dino__3_.jpg" />
+  <media name="dino (33).jpg" file="dino__33_.jpg" />
+  <media name="dino (34).jpg" file="dino__34_.jpg" />
+  <media name="dino (4).jpg" file="dino__4_.jpg" />
+  <media name="dino (43).jpg" file="dino__43_.jpg" />
+  <media name="dino (46).jpg" file="dino__46_.jpg" />
+  <media name="dino (47).jpg" file="dino__47_.jpg" />
+  <media name="dino (5).jpg" file="dino__5_.jpg" />
+  <media name="dino (50).jpg" file="dino__50_.jpg" />
+  <media name="dino (51).jpg" file="dino__51_.jpg" />
+  <media name="dino (52).jpg" file="dino__52_.jpg" />
+  <media name="dino (53).jpg" file="dino__53_.jpg" />
+  <media name="dino (54).jpg" file="dino__54_.jpg" />
+  <media name="dino (55).jpg" file="dino__55_.jpg" />
+  <media name="dino (56).jpg" file="dino__56_.jpg" />
+  <media name="dino (57).jpg" file="dino__57_.jpg" />
+  <media name="dino (58).jpg" file="dino__58_.jpg" />
+  <media name="dino (59).jpg" file="dino__59_.jpg" />
+  <media name="dino (6).jpg" file="dino__6_.jpg" />
+  <media name="dino (7).jpg" file="dino__7_.jpg" />
+  <media name="dino (71).jpg" file="dino__71_.jpg" />
+  <media name="dino (8).jpg" file="dino__8_.jpg" />
+  <media name="dino (82).jpg" file="dino__82_.jpg" />
+  <media name="dino (9).jpg" file="dino__9_.jpg" />
+  <media name="dinoachtergrond.jpg" file="dinoachtergrond.jpg" />
+  <media name="puzzel2.jpg" file="puzzel2.jpg" />
+  <media name="volgorde1.jpg" file="volgorde1.jpg" />
+  <media name="volgorde2.jpg" file="volgorde2.jpg" />
+  <media name="volgorde3.jpg" file="volgorde3.jpg" />
+  <media name="volgorde4.jpg" file="volgorde4.jpg" />
+  <media name="applausedino.mp3" file="applausedino.mp3" />
+ </mediaBag>
+</JClicProject>
+
