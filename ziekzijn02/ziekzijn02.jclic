@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ziekzijn02" version="0.1.3">
+ <settings>
+  <title>Ziekzijn02</title>
+  <revision description="created" date="8/23/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="rontgenfoto" delay="1" />
+  <item name="PATROON" delay="1" />
+  <item name="van groot naar klein" delay="1" />
+  <item name="puzzel" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="ziek achtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause ziek .mp3" />
+     <sound id="finishedOk" file="applause ziek .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="dokter .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="dokterstas .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="patient .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="pilletjes .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="siroop .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="spuit .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stehoscoop.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="thermometer .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="verband.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="rontgenfoto" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke röntgenfoto hoort er bij de lichaamsdelen?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="ziek achtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause ziek .mp3" />
+     <sound id="finishedOk" file="applause ziek .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="arm  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="BEEN  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="buik  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="HAND   .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="hand r  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="lichaam  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style borderStroke="4.9" markerStroke="2.7">
+     <color border="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="arm röntgen  .jpg">
+     <style borderStroke="10.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0xFF3300" />
+     </style>
+    </cell>
+    <cell image="been  röntgen  .jpg">
+     <style borderStroke="10.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0xFF0000" />
+     </style>
+    </cell>
+    <cell image="BUIK röntgen .jpg">
+     <style borderStroke="10.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0xFF0000" />
+     </style>
+    </cell>
+    <cell image="HAND röntgen L  .jpg">
+     <style borderStroke="10.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0xFF0000" />
+     </style>
+    </cell>
+    <cell image="HAND röntgen  .jpg">
+     <style borderStroke="10.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0xFF0000" />
+     </style>
+    </cell>
+    <cell image="lichaam  röntgen  .jpg">
+     <style borderStroke="10.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0xFF0000" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="PATROON" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Vul het patroon aan ..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="ziek achtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause ziek .mp3" />
+     <sound id="finishedOk" file="applause ziek .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="1" cellWidth="1074.0" cellHeight="242.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="4" image="patroon 1 .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="patroon 2 .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="3" image="patroon 3 .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="228.0" cellHeight="226.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="chirurg  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="stehoscoop.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="oorstokje .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="pijn knie pleister  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ziekenwagen .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="van groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="groot naar klein .jpg" type="initial">
+     <style />
+     <p>Van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="ziek achtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause ziek .mp3" />
+     <sound id="finishedOk" file="applause ziek .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="spuit groot .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="spuit kleiner .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="spuit klein .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="spuit kleinst .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="ziek achtergrond.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applause ziek .mp3" />
+     <sound id="finishedOk" file="applause ziek .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel2.jpg">
+    <style />
+    <shaper class="@TriangularJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="arm  .jpg" file="arm__.jpg" />
+  <media name="arm röntgen  .jpg" file="arm_rontgen__.jpg" />
+  <media name="BEEN  .jpg" file="been__.jpg" />
+  <media name="been  röntgen  .jpg" file="been__rontgen__.jpg" />
+  <media name="buik  .jpg" file="buik__.jpg" />
+  <media name="BUIK röntgen .jpg" file="buik_rontgen_.jpg" />
+  <media name="chirurg  .jpg" file="chirurg__.jpg" />
+  <media name="dokter .jpg" file="dokter_.jpg" />
+  <media name="dokterstas .jpg" file="dokterstas_.jpg" />
+  <media name="groot naar klein .jpg" file="groot_naar_klein_.jpg" />
+  <media name="HAND   .jpg" file="hand___.jpg" />
+  <media name="hand r  .jpg" file="hand_r__.jpg" />
+  <media name="HAND röntgen  .jpg" file="hand_rontgen__.jpg" />
+  <media name="HAND röntgen L  .jpg" file="hand_rontgen_l__.jpg" />
+  <media name="lichaam  .jpg" file="lichaam__.jpg" />
+  <media name="lichaam  röntgen  .jpg" file="lichaam__rontgen__.jpg" />
+  <media name="oorstokje .jpg" file="oorstokje_.jpg" />
+  <media name="patient .jpg" file="patient_.jpg" />
+  <media name="patroon 1 .jpg" file="patroon_1_.jpg" />
+  <media name="patroon 2 .jpg" file="patroon_2_.jpg" />
+  <media name="patroon 3 .jpg" file="patroon_3_.jpg" />
+  <media name="pijn knie pleister  .jpg" file="pijn_knie_pleister__.jpg" />
+  <media name="pilletjes .jpg" file="pilletjes_.jpg" />
+  <media name="puzzel2.jpg" file="puzzel2.jpg" />
+  <media name="siroop .jpg" file="siroop_.jpg" />
+  <media name="spuit .jpg" file="spuit_.jpg" />
+  <media name="spuit groot .jpg" file="spuit_groot_.jpg" />
+  <media name="spuit klein .jpg" file="spuit_klein_.jpg" />
+  <media name="spuit kleiner .jpg" file="spuit_kleiner_.jpg" />
+  <media name="spuit kleinst .jpg" file="spuit_kleinst_.jpg" />
+  <media name="stehoscoop.jpg" file="stehoscoop.jpg" />
+  <media name="thermometer .jpg" file="thermometer_.jpg" />
+  <media name="verband.jpg" file="verband.jpg" />
+  <media name="ziek achtergrond.jpg" file="ziek_achtergrond.jpg" />
+  <media name="ziekenwagen .jpg" file="ziekenwagen_.jpg" />
+  <media name="applause ziek .mp3" file="applause_ziek_.mp3" />
+ </mediaBag>
+</JClicProject>
+
