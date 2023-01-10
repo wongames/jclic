@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="piraten02" version="0.1.3">
+ <settings>
+  <title>piraten02</title>
+  <revision description="created" date="12/26/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="groot naar klein" delay="1" />
+  <item name="logische volgorde" delay="1" />
+  <item name="patroon" delay="1" />
+  <item name="sleutels" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="pictogrootnaarklein.jpg" type="initial">
+     <style />
+     <p>van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpiraten.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepiraten.mp3" />
+     <sound id="finishedOk" file="applausepiraten.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="Piratenhoed groot .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Piratenhoed kleiner .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Piratenhoed klein .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="Piratenhoed kleinst .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="sleutels" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke vormensleutel past er op de schatkist?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpiraten.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepiraten.mp3" />
+     <sound id="finishedOk" file="applausepiraten.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="schatkist driehoek.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schatkist maan.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schatkist ovaal.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schatkist ster.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schatkist trap.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schatkist vierkant.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="sleutel driehoek.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sleutel maan.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sleutel ovaal.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sleutel ster.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sleutel trap.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="sleutel vierkant.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="logische volgorde" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Logische volgorde: de schatkaart.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpiraten.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepiraten.mp3" />
+     <sound id="finishedOk" file="applausepiraten.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="volgorde 1 ..jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde 2 ..jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde 3 ..jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="volgorde 4 ..jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpiraten.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepiraten.mp3" />
+     <sound id="finishedOk" file="applausepiraten.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="piraat aap.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat beer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat bij.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat haas.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat hond.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat kat.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat kikker.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat koe.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="piraat muis.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="patroon" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Vul het patroon aan ..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondpiraten.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausepiraten.mp3" />
+     <sound id="finishedOk" file="applausepiraten.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="1" cellWidth="802.0" cellHeight="189.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" image="patroon1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="patroon2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="patroon 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="153.0" cellHeight="137.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="d oranje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="d groen .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="d geel .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="d paars .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="d blauw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrondpiraten.jpg" file="achtergrondpiraten.jpg" />
+  <media name="d blauw .jpg" file="d_blauw_.jpg" />
+  <media name="d geel .jpg" file="d_geel_.jpg" />
+  <media name="d groen .jpg" file="d_groen_.jpg" />
+  <media name="d oranje.jpg" file="d_oranje.jpg" />
+  <media name="d paars .jpg" file="d_paars_.jpg" />
+  <media name="patroon 3.jpg" file="patroon_3.jpg" />
+  <media name="patroon1.jpg" file="patroon1.jpg" />
+  <media name="patroon2.jpg" file="patroon2.jpg" />
+  <media name="pictogrootnaarklein.jpg" file="pictogrootnaarklein.jpg" />
+  <media name="piraat aap.jpg" file="piraat_aap.jpg" />
+  <media name="piraat beer.jpg" file="piraat_beer.jpg" />
+  <media name="piraat bij.jpg" file="piraat_bij.jpg" />
+  <media name="piraat haas.jpg" file="piraat_haas.jpg" />
+  <media name="piraat hond.jpg" file="piraat_hond.jpg" />
+  <media name="piraat kat.jpg" file="piraat_kat.jpg" />
+  <media name="piraat kikker.jpg" file="piraat_kikker.jpg" />
+  <media name="piraat koe.jpg" file="piraat_koe.jpg" />
+  <media name="piraat muis.jpg" file="piraat_muis.jpg" />
+  <media name="Piratenhoed groot .jpg" file="piratenhoed_groot_.jpg" />
+  <media name="Piratenhoed klein .jpg" file="piratenhoed_klein_.jpg" />
+  <media name="Piratenhoed kleiner .jpg" file="piratenhoed_kleiner_.jpg" />
+  <media name="Piratenhoed kleinst .jpg" file="piratenhoed_kleinst_.jpg" />
+  <media name="schatkist driehoek.jpg" file="schatkist_driehoek.jpg" />
+  <media name="schatkist maan.jpg" file="schatkist_maan.jpg" />
+  <media name="schatkist ovaal.jpg" file="schatkist_ovaal.jpg" />
+  <media name="schatkist ster.jpg" file="schatkist_ster.jpg" />
+  <media name="schatkist trap.jpg" file="schatkist_trap.jpg" />
+  <media name="schatkist vierkant.jpg" file="schatkist_vierkant.jpg" />
+  <media name="sleutel driehoek.jpg" file="sleutel_driehoek.jpg" />
+  <media name="sleutel maan.jpg" file="sleutel_maan.jpg" />
+  <media name="sleutel ovaal.jpg" file="sleutel_ovaal.jpg" />
+  <media name="sleutel ster.jpg" file="sleutel_ster.jpg" />
+  <media name="sleutel trap.jpg" file="sleutel_trap.jpg" />
+  <media name="sleutel vierkant.jpg" file="sleutel_vierkant.jpg" />
+  <media name="volgorde 1 ..jpg" file="volgorde_1_..jpg" />
+  <media name="volgorde 2 ..jpg" file="volgorde_2_..jpg" />
+  <media name="volgorde 3 ..jpg" file="volgorde_3_..jpg" />
+  <media name="volgorde 4 ..jpg" file="volgorde_4_..jpg" />
+  <media name="applausepiraten.mp3" file="applausepiraten.mp3" />
+ </mediaBag>
+</JClicProject>
+
