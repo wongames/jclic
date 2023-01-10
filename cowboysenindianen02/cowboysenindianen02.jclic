@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="cowboysenindianen02" version="0.1.3">
+ <settings>
+  <title>cowboysenindianen02</title>
+  <revision description="created" date="1/1/23" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="patroon" delay="1" />
+  <item name="vorm" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="kleur" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welk paard hoort bij de indiaan? Kijk goed naar de kleuren.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondindiaan.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecowboysenindianen .mp3" />
+     <sound id="finishedOk" file="applausecowboysenindianen .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="indiaanblauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaangeel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaangroen.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaanlichtblauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaanoranje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaanpaars.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaanrood.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="indiaanroos.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="paardblauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardgeel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardgroen.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardlichtblauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardoranje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardpaars.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardrood.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="paardroos.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondindiaan.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecowboysenindianen .mp3" />
+     <sound id="finishedOk" file="applausecowboysenindianen .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="1 (1).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (2).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (3).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (4).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (5).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (6).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (11).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (9).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="1 (8).jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="patroon" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Vul het patroon aan..</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondindiaan.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecowboysenindianen .mp3" />
+     <sound id="finishedOk" file="applausecowboysenindianen .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="1" cellWidth="869.0" cellHeight="175.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell id="0" image="patroon1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="patroon2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="patroon3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="141.0" cellHeight="108.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="roos.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="blauw.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geel.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rood.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondindiaan.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecowboysenindianen .mp3" />
+     <sound id="finishedOk" file="applausecowboysenindianen .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="vorm" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke vorm heeft de cactus?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondindiaan.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecowboysenindianen .mp3" />
+     <sound id="finishedOk" file="applausecowboysenindianen .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="7" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell image="cirkelcactus.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="driehoekcactus.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ovaalcactus.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rechthoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ruitcactus.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trapeziumcactus.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vierkantcactus.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="7" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell image="cirkel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="driehoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ovaal.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rechthoek2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ruit.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trapezium.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vierkant.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1 (1).jpg" file="1__1_.jpg" />
+  <media name="1 (11).jpg" file="1__11_.jpg" />
+  <media name="1 (2).jpg" file="1__2_.jpg" />
+  <media name="1 (3).jpg" file="1__3_.jpg" />
+  <media name="1 (4).jpg" file="1__4_.jpg" />
+  <media name="1 (5).jpg" file="1__5_.jpg" />
+  <media name="1 (6).jpg" file="1__6_.jpg" />
+  <media name="1 (8).jpg" file="1__8_.jpg" />
+  <media name="1 (9).jpg" file="1__9_.jpg" />
+  <media name="achtergrondindiaan.jpg" file="achtergrondindiaan.jpg" />
+  <media name="cirkel.jpg" file="cirkel.jpg" />
+  <media name="cirkelcactus.jpg" file="cirkelcactus.jpg" />
+  <media name="driehoek.jpg" file="driehoek.jpg" />
+  <media name="driehoekcactus.jpg" file="driehoekcactus.jpg" />
+  <media name="indiaanblauw.jpg" file="indiaanblauw.jpg" />
+  <media name="indiaangeel.jpg" file="indiaangeel.jpg" />
+  <media name="indiaangroen.jpg" file="indiaangroen.jpg" />
+  <media name="indiaanlichtblauw.jpg" file="indiaanlichtblauw.jpg" />
+  <media name="indiaanoranje.jpg" file="indiaanoranje.jpg" />
+  <media name="indiaanpaars.jpg" file="indiaanpaars.jpg" />
+  <media name="indiaanrood.jpg" file="indiaanrood.jpg" />
+  <media name="indiaanroos.jpg" file="indiaanroos.jpg" />
+  <media name="ovaal.jpg" file="ovaal.jpg" />
+  <media name="ovaalcactus.jpg" file="ovaalcactus.jpg" />
+  <media name="paardblauw.jpg" file="paardblauw.jpg" />
+  <media name="paardgeel.jpg" file="paardgeel.jpg" />
+  <media name="paardgroen.jpg" file="paardgroen.jpg" />
+  <media name="paardlichtblauw.jpg" file="paardlichtblauw.jpg" />
+  <media name="paardoranje.jpg" file="paardoranje.jpg" />
+  <media name="paardpaars.jpg" file="paardpaars.jpg" />
+  <media name="paardrood.jpg" file="paardrood.jpg" />
+  <media name="paardroos.jpg" file="paardroos.jpg" />
+  <media name="patroon1.jpg" file="patroon1.jpg" />
+  <media name="patroon2.jpg" file="patroon2.jpg" />
+  <media name="patroon3.jpg" file="patroon3.jpg" />
+  <media name="puzzel.jpg" file="puzzel.jpg" />
+  <media name="rechthoek.jpg" file="rechthoek.jpg" />
+  <media name="rechthoek2.jpg" file="rechthoek2.jpg" />
+  <media name="rood.jpg" file="rood.jpg" />
+  <media name="roos.jpg" file="roos.jpg" />
+  <media name="ruit.jpg" file="ruit.jpg" />
+  <media name="ruitcactus.jpg" file="ruitcactus.jpg" />
+  <media name="trapezium.jpg" file="trapezium.jpg" />
+  <media name="trapeziumcactus.jpg" file="trapeziumcactus.jpg" />
+  <media name="vierkant.jpg" file="vierkant.jpg" />
+  <media name="vierkantcactus.jpg" file="vierkantcactus.jpg" />
+  <media name="applausecowboysenindianen .mp3" file="applausecowboysenindianen_.mp3" />
+  <media name="blauw.png" file="blauw.png" />
+  <media name="geel.png" file="geel.png" />
+ </mediaBag>
+</JClicProject>
+
