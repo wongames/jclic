@@ -1,0 +1,56 @@
+{
+  "title": "Lente01",
+  "date": "26-8-22",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "lente01.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 30,
+  "totalSize": 1579338,
+  "files": [
+    "achtergrondlente_.jpg",
+    "applauselente.mp3",
+    "bloem1.jpg",
+    "bloem2.jpg",
+    "bloem3.jpg",
+    "favicon.ico",
+    "getalbeeld___1_.jpg",
+    "getalbeeld___2_.jpg",
+    "getalbeeld___3_.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "lente01.jclic",
+    "lente01.jclic.js",
+    "memo1.jpg",
+    "memo2.jpg",
+    "memo3.jpg",
+    "memo4.jpg",
+    "memo5.jpg",
+    "memo6.jpg",
+    "memo7a.jpg",
+    "picto_groot_naar_klein_.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel_1.jpg",
+    "schaduw2.jpg",
+    "schaduw3.jpg",
+    "schaduw4.jpg",
+    "schaduw5.jpg",
+    "schaduw7.jpg",
+    "zonnebloemgroot.jpg",
+    "zonnebloemklein.jpg",
+    "zonnebloemkleinst.jpg"
+  ]
+}
