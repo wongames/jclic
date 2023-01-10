@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="lente02" version="0.1.3">
+ <settings>
+  <title>Lente02</title>
+  <revision description="created" date="8/26/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="logische volgorde" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="schaduwbloemen" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondlente .jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauselente.mp3" />
+     <sound id="finishedOk" file="applauselente.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="bloem1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem7.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem8.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem9.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="logische volgorde" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Logische volgorde: van zaadje tot bloem</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondlente .jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauselente.mp3" />
+     <sound id="finishedOk" file="applauselente.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel tulpen tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondlente .jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauselente.mp3" />
+     <sound id="finishedOk" file="applauselente.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="roos 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos 5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="roos 6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="getalbeeld  (1).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld  (2).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld  (3).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld  (4).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld  (5).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="getalbeeld  (6).jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondlente .jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauselente.mp3" />
+     <sound id="finishedOk" file="applauselente.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="puzzel2.jpg">
+    <style />
+    <shaper class="@TriangularJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schaduwbloemen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek de juiste schaduw</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondlente .jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauselente.mp3" />
+     <sound id="finishedOk" file="applauselente.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="bloem 1a .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 2a .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 3a .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 4a .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 5a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 6a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 7a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 8a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bloem 9a.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="schaduw 1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 7.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 8.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schaduw 9.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1.jpg" file="1.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="achtergrondlente .jpg" file="achtergrondlente_.jpg" />
+  <media name="bloem 1a .jpg" file="bloem_1a_.jpg" />
+  <media name="bloem 2a .jpg" file="bloem_2a_.jpg" />
+  <media name="bloem 3a .jpg" file="bloem_3a_.jpg" />
+  <media name="bloem 4a .jpg" file="bloem_4a_.jpg" />
+  <media name="bloem 5a.jpg" file="bloem_5a.jpg" />
+  <media name="bloem 6a.jpg" file="bloem_6a.jpg" />
+  <media name="bloem 7a.jpg" file="bloem_7a.jpg" />
+  <media name="bloem 8a.jpg" file="bloem_8a.jpg" />
+  <media name="bloem 9a.jpg" file="bloem_9a.jpg" />
+  <media name="bloem1.jpg" file="bloem1.jpg" />
+  <media name="bloem2.jpg" file="bloem2.jpg" />
+  <media name="bloem3.jpg" file="bloem3.jpg" />
+  <media name="bloem4.jpg" file="bloem4.jpg" />
+  <media name="bloem5.jpg" file="bloem5.jpg" />
+  <media name="bloem6.jpg" file="bloem6.jpg" />
+  <media name="bloem7.jpg" file="bloem7.jpg" />
+  <media name="bloem8.jpg" file="bloem8.jpg" />
+  <media name="bloem9.jpg" file="bloem9.jpg" />
+  <media name="getalbeeld  (1).jpg" file="getalbeeld___1_.jpg" />
+  <media name="getalbeeld  (2).jpg" file="getalbeeld___2_.jpg" />
+  <media name="getalbeeld  (3).jpg" file="getalbeeld___3_.jpg" />
+  <media name="getalbeeld  (4).jpg" file="getalbeeld___4_.jpg" />
+  <media name="getalbeeld  (5).jpg" file="getalbeeld___5_.jpg" />
+  <media name="getalbeeld  (6).jpg" file="getalbeeld___6_.jpg" />
+  <media name="puzzel2.jpg" file="puzzel2.jpg" />
+  <media name="roos 1.jpg" file="roos_1.jpg" />
+  <media name="roos 2.jpg" file="roos_2.jpg" />
+  <media name="roos 3.jpg" file="roos_3.jpg" />
+  <media name="roos 4.jpg" file="roos_4.jpg" />
+  <media name="roos 5.jpg" file="roos_5.jpg" />
+  <media name="roos 6.jpg" file="roos_6.jpg" />
+  <media name="schaduw 1.jpg" file="schaduw_1.jpg" />
+  <media name="schaduw 2.jpg" file="schaduw_2.jpg" />
+  <media name="schaduw 3.jpg" file="schaduw_3.jpg" />
+  <media name="schaduw 4.jpg" file="schaduw_4.jpg" />
+  <media name="schaduw 5.jpg" file="schaduw_5.jpg" />
+  <media name="schaduw 6.jpg" file="schaduw_6.jpg" />
+  <media name="schaduw 7.jpg" file="schaduw_7.jpg" />
+  <media name="schaduw 8.jpg" file="schaduw_8.jpg" />
+  <media name="schaduw 9.jpg" file="schaduw_9.jpg" />
+  <media name="applauselente.mp3" file="applauselente.mp3" />
+ </mediaBag>
+</JClicProject>
+
