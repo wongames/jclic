@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="circus01" version="0.1.3">
+ <settings>
+  <title>circus01</title>
+  <revision description="created" date="10/2/22" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Memory" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="schaduw" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="vormen" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="Memory" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: Zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondcircus.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecircus .mp3" />
+     <sound id="finishedOk" file="applausecircus .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="3 aap .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="4 zeehond .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="5 clown .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="8 goochelaar .png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="7 leeuw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="32461ae08c7607ebf38708fdc6c90aa4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel clowntjes tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondcircus.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecircus .mp3" />
+     <sound id="finishedOk" file="applausecircus .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="1clown.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2clown.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3clown.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schaduw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek de juiste schaduw.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondcircus.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecircus .mp3" />
+     <sound id="finishedOk" file="applausecircus .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="ballerina kleur .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="circusdierecteur kleur .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="clown  kleur .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="leeuw kleur .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tent  kleur .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zeehond kleur .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="ballerina  schaduw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="circusdirecteur  schaduw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="clown schaduw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="leeuw schaduw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tent schaduw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zeehond schaduw .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondcircus.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecircus .mp3" />
+     <sound id="finishedOk" file="applausecircus .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" border="true" image="puzzel1.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="vormen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke vorm heeft de neus van Tito de clown?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrondcircus.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausecircus .mp3" />
+     <sound id="finishedOk" file="applausecircus .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="tito cirkel .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tito driehoek .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tito vierkant .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tito ruit.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tito trapezium.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="tito zeshoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="cirkel .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="driehoek .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vierkant .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ruit.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="trapezium.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zeshoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1.jpg" file="1.jpg" />
+  <media name="1clown.jpg" file="1clown.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="2clown.jpg" file="2clown.jpg" />
+  <media name="3 aap .jpg" file="3_aap_.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="32461ae08c7607ebf38708fdc6c90aa4.jpg" file="32461ae08c7607ebf38708fdc6c90aa4.jpg" />
+  <media name="3clown.jpg" file="3clown.jpg" />
+  <media name="4 zeehond .jpg" file="4_zeehond_.jpg" />
+  <media name="5 clown .jpg" file="5_clown_.jpg" />
+  <media name="7 leeuw.jpg" file="7_leeuw.jpg" />
+  <media name="achtergrondcircus.jpg" file="achtergrondcircus.jpg" />
+  <media name="ballerina  schaduw .jpg" file="ballerina__schaduw_.jpg" />
+  <media name="ballerina kleur .jpg" file="ballerina_kleur_.jpg" />
+  <media name="circusdierecteur kleur .jpg" file="circusdierecteur_kleur_.jpg" />
+  <media name="circusdirecteur  schaduw .jpg" file="circusdirecteur__schaduw_.jpg" />
+  <media name="cirkel .jpg" file="cirkel_.jpg" />
+  <media name="clown  kleur .jpg" file="clown__kleur_.jpg" />
+  <media name="clown schaduw .jpg" file="clown_schaduw_.jpg" />
+  <media name="driehoek .jpg" file="driehoek_.jpg" />
+  <media name="leeuw kleur .jpg" file="leeuw_kleur_.jpg" />
+  <media name="leeuw schaduw .jpg" file="leeuw_schaduw_.jpg" />
+  <media name="puzzel1.jpg" file="puzzel1.jpg" />
+  <media name="ruit.jpg" file="ruit.jpg" />
+  <media name="tent  kleur .jpg" file="tent__kleur_.jpg" />
+  <media name="tent schaduw .jpg" file="tent_schaduw_.jpg" />
+  <media name="tito cirkel .jpg" file="tito_cirkel_.jpg" />
+  <media name="tito driehoek .jpg" file="tito_driehoek_.jpg" />
+  <media name="tito ruit.jpg" file="tito_ruit.jpg" />
+  <media name="tito trapezium.jpg" file="tito_trapezium.jpg" />
+  <media name="tito vierkant .jpg" file="tito_vierkant_.jpg" />
+  <media name="tito zeshoek.jpg" file="tito_zeshoek.jpg" />
+  <media name="trapezium.jpg" file="trapezium.jpg" />
+  <media name="vierkant .jpg" file="vierkant_.jpg" />
+  <media name="zeehond kleur .jpg" file="zeehond_kleur_.jpg" />
+  <media name="zeehond schaduw .jpg" file="zeehond_schaduw_.jpg" />
+  <media name="zeshoek.jpg" file="zeshoek.jpg" />
+  <media name="applausecircus .mp3" file="applausecircus_.mp3" />
+  <media name="8 goochelaar .png" file="8_goochelaar_.png" />
+ </mediaBag>
+</JClicProject>
+
