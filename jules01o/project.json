@@ -1,0 +1,60 @@
+{
+  "title": "Jules01o",
+  "date": "28-5-23",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01o.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 34,
+  "totalSize": 3228741,
+  "files": [
+    "ambulance.mp3",
+    "applausejules_.mp3",
+    "auto.jpg",
+    "auto_geluid.mp3",
+    "de_fiets.jpg",
+    "de_fietsblauw.jpg",
+    "de_fietsgeel.jpg",
+    "de_fietsgroen.jpg",
+    "de_fietsrood.jpg",
+    "de_fietsschaduw.jpg",
+    "favicon.ico",
+    "fietsbel.jpg",
+    "fietsbel.mp3",
+    "geleauto.jpg",
+    "geleautoschaduw.jpg",
+    "geluidblauw.jpg",
+    "geluidgeel.jpg",
+    "geluidrood.jpg",
+    "helm.jpg",
+    "helmschaduw_.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules.jpg",
+    "jules01o.jclic",
+    "jules01o.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "julesgeelhelm.jpg",
+    "julesgroenlhelm.jpg",
+    "julesopdefiets.jpg",
+    "julesrblauwelm.jpg",
+    "julesroodhelm.jpg",
+    "julessschaduw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel.jpg",
+    "ziekenwagen_.jpg"
+  ]
+}

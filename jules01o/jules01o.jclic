@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="jules01o" version="0.1.3">
+ <settings>
+  <title>Jules01o</title>
+  <revision description="created" date="5/28/23" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="schaduw" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="kleur" delay="1" />
+  <item name="geluid" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="julesachtergrondjpg.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausejules .mp3" />
+     <sound id="finishedOk" file="applausejules .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="de fiets.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="auto.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="julesopdefiets.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="helm.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="schaduw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek de juiste schaduw.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="julesachtergrondjpg.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausejules .mp3" />
+     <sound id="finishedOk" file="applausejules .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="298.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="de fiets.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="helm.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="jules.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geleauto.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="de fietsschaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="helmschaduw .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="julessschaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="geleautoschaduw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="julesachtergrondjpg.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausejules .mp3" />
+     <sound id="finishedOk" file="applausejules .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="3" border="true" image="puzzel.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="1" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="kleur" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke fiets is van Jules? Kijk goed naar de kleuren.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="julesachtergrondjpg.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausejules .mp3" />
+     <sound id="finishedOk" file="applausejules .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="298.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="julesgeelhelm.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="julesgroenlhelm.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="julesrblauwelm.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="julesroodhelm.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="de fietsgeel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="de fietsgroen.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="de fietsblauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="de fietsrood.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="geluid" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welk geluid in het verkeer hoor je? </p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="julesachtergrondjpg.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applausejules .mp3" />
+     <sound id="finishedOk" file="applausejules .mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="geluidgeel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="auto geluid.mp3" />
+    </cell>
+    <cell image="geluidrood.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fietsbel.mp3" />
+    </cell>
+    <cell image="geluidblauw.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ambulance.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="geleauto.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="fietsbel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ziekenwagen .jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="auto.jpg" file="auto.jpg" />
+  <media name="de fiets.jpg" file="de_fiets.jpg" />
+  <media name="de fietsblauw.jpg" file="de_fietsblauw.jpg" />
+  <media name="de fietsgeel.jpg" file="de_fietsgeel.jpg" />
+  <media name="de fietsgroen.jpg" file="de_fietsgroen.jpg" />
+  <media name="de fietsrood.jpg" file="de_fietsrood.jpg" />
+  <media name="de fietsschaduw.jpg" file="de_fietsschaduw.jpg" />
+  <media name="fietsbel.jpg" file="fietsbel.jpg" />
+  <media name="geleauto.jpg" file="geleauto.jpg" />
+  <media name="geleautoschaduw.jpg" file="geleautoschaduw.jpg" />
+  <media name="geluidblauw.jpg" file="geluidblauw.jpg" />
+  <media name="geluidgeel.jpg" file="geluidgeel.jpg" />
+  <media name="geluidrood.jpg" file="geluidrood.jpg" />
+  <media name="helm.jpg" file="helm.jpg" />
+  <media name="helmschaduw .jpg" file="helmschaduw_.jpg" />
+  <media name="jules.jpg" file="jules.jpg" />
+  <media name="julesachtergrondjpg.jpg" file="julesachtergrondjpg.jpg" />
+  <media name="julesgeelhelm.jpg" file="julesgeelhelm.jpg" />
+  <media name="julesgroenlhelm.jpg" file="julesgroenlhelm.jpg" />
+  <media name="julesopdefiets.jpg" file="julesopdefiets.jpg" />
+  <media name="julesrblauwelm.jpg" file="julesrblauwelm.jpg" />
+  <media name="julesroodhelm.jpg" file="julesroodhelm.jpg" />
+  <media name="julessschaduw.jpg" file="julessschaduw.jpg" />
+  <media name="puzzel.jpg" file="puzzel.jpg" />
+  <media name="ziekenwagen .jpg" file="ziekenwagen_.jpg" />
+  <media name="ambulance.mp3" file="ambulance.mp3" />
+  <media name="applausejules .mp3" file="applausejules_.mp3" />
+  <media name="auto geluid.mp3" file="auto_geluid.mp3" />
+  <media name="fietsbel.mp3" file="fietsbel.mp3" />
+ </mediaBag>
+</JClicProject>
+
