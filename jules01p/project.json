@@ -1,0 +1,51 @@
+{
+  "title": "Jules01p",
+  "date": "12-7-23",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01p.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 25,
+  "totalSize": 1112043,
+  "files": [
+    "1._puzzel_winter_jules.jpg",
+    "applausejules_.mp3",
+    "favicon.ico",
+    "geel.jpg",
+    "groen.jpg",
+    "hond_op_slee.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01p.jclic",
+    "jules01p.jclic.js",
+    "jules_muts.jpg",
+    "julesachtergrondjpg.jpg",
+    "mutsblauw.jpg",
+    "mutsgeel.jpg",
+    "mutsgroen.jpg",
+    "mutsrood.jpg",
+    "naamloos2.jpg",
+    "naamloosblauw.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel_2.jpg",
+    "rood.jpg",
+    "schaduw_hond_op_slee.jpg",
+    "schaduw_jules_muts.jpg",
+    "schaduw_marie.jpg",
+    "schaduw_sneeuwman.jpg",
+    "sneeuwman_kluer.jpg"
+  ]
+}
