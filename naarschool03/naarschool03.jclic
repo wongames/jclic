@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="naarschool03" version="0.1.3">
+ <settings>
+  <title>Naarschool03</title>
+  <revision description="created" date="8/20/23" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="PUZZEL3" delay="1" />
+  <item name="groot naar klein" delay="1" />
+  <item name="tellen bus" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="PUZZEL3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond school.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseschool.mp3" />
+     <sound id="finishedOk" file="applauseschool.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="4" cols="3" border="true" image="e0df804d373f109e4160b15b341ee2ce.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="picto_groot_naar_klein_.jpg" type="initial">
+     <style />
+     <p>van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond school.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseschool.mp3" />
+     <sound id="finishedOk" file="applauseschool.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="boekentasgroot.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentaskleiner.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentasklein.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentaskleinst.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond school.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseschool.mp3" />
+     <sound id="finishedOk" file="applauseschool.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell image="boekentas.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="banaan_.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="drinkbus.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="brooddoos.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="juf voorlezen.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindje 1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindje 3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kindje2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="school2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zwaaien.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="schoolbus.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="juf.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel boekentassen tel je aan de kapstok?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond school.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseschool.mp3" />
+     <sound id="finishedOk" file="applauseschool.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="boekentas 4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentas 1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentas3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentas5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentas7.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boekentas2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>4</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>1</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>5</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>7</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="72" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>2</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen bus" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel kindjes zitten er in de bus?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond school.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseschool.mp3" />
+     <sound id="finishedOk" file="applauseschool.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" cellWidth="285.0" cellHeight="359.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="bus1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus43.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus7.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="bus8.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="156.0" cellHeight="296.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>1</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>2</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>3</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>5</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>4</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>6</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>7</p>
+    </cell>
+    <cell image="cijfer.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>8</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="achtergrond school.jpg" file="achtergrond_school.jpg" />
+  <media name="banaan_.jpg" file="banaan_.jpg" />
+  <media name="boekentas 1.jpg" file="boekentas_1.jpg" />
+  <media name="boekentas 4.jpg" file="boekentas_4.jpg" />
+  <media name="boekentas.jpg" file="boekentas.jpg" />
+  <media name="boekentas2.jpg" file="boekentas2.jpg" />
+  <media name="boekentas3.jpg" file="boekentas3.jpg" />
+  <media name="boekentas5.jpg" file="boekentas5.jpg" />
+  <media name="boekentas7.jpg" file="boekentas7.jpg" />
+  <media name="boekentasgroot.jpg" file="boekentasgroot.jpg" />
+  <media name="boekentasklein.jpg" file="boekentasklein.jpg" />
+  <media name="boekentaskleiner.jpg" file="boekentaskleiner.jpg" />
+  <media name="boekentaskleinst.jpg" file="boekentaskleinst.jpg" />
+  <media name="brooddoos.jpg" file="brooddoos.jpg" />
+  <media name="bus1.jpg" file="bus1.jpg" />
+  <media name="bus2.jpg" file="bus2.jpg" />
+  <media name="bus3.jpg" file="bus3.jpg" />
+  <media name="bus43.jpg" file="bus43.jpg" />
+  <media name="bus5.jpg" file="bus5.jpg" />
+  <media name="bus6.jpg" file="bus6.jpg" />
+  <media name="bus7.jpg" file="bus7.jpg" />
+  <media name="bus8.jpg" file="bus8.jpg" />
+  <media name="cijfer.jpg" file="cijfer.jpg" />
+  <media name="drinkbus.jpg" file="drinkbus.jpg" />
+  <media name="e0df804d373f109e4160b15b341ee2ce.jpg" file="e0df804d373f109e4160b15b341ee2ce.jpg" />
+  <media name="juf voorlezen.jpg" file="juf_voorlezen.jpg" />
+  <media name="juf.jpg" file="juf.jpg" />
+  <media name="kindje 1.jpg" file="kindje_1.jpg" />
+  <media name="kindje 3.jpg" file="kindje_3.jpg" />
+  <media name="kindje2.jpg" file="kindje2.jpg" />
+  <media name="picto_groot_naar_klein_.jpg" file="picto_groot_naar_klein_.jpg" />
+  <media name="school2.jpg" file="school2.jpg" />
+  <media name="schoolbus.jpg" file="schoolbus.jpg" />
+  <media name="zwaaien.jpg" file="zwaaien.jpg" />
+  <media name="applauseschool.mp3" file="applauseschool.mp3" />
+ </mediaBag>
+</JClicProject>
+
