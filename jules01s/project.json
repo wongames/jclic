@@ -1,0 +1,59 @@
+{
+  "title": "Jules01s",
+  "date": "10-1-24",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01s.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 33,
+  "totalSize": 920575,
+  "files": [
+    "applausejules_.mp3",
+    "babybeer.jpg",
+    "bed.jpg",
+    "beercirkel.jpg",
+    "beerruit.jpg",
+    "beerster.jpg",
+    "blauw_beer.jpg",
+    "blauwstoel.jpg",
+    "cirkel.jpg",
+    "favicon.ico",
+    "geel_beer.jpg",
+    "geelstoel.jpg",
+    "goudlokje.jpg",
+    "groen_beer.jpg",
+    "groenstoel2.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01s.jclic",
+    "jules01s.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "potjebeer.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel.jpg",
+    "rodestoel.jpg",
+    "rood_beer.jpg",
+    "ruit.jpg",
+    "schaduwbabybeer.jpg",
+    "schaduwbed.jpg",
+    "schaduwgoudlokje.jpg",
+    "schaduwpotjebeer.jpg",
+    "ster.jpg",
+    "stoel.jpg",
+    "trapezium.jpg",
+    "trapeziumzwart.jpg"
+  ]
+}
