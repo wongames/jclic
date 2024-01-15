@@ -1,0 +1,60 @@
+{
+  "title": "Jules01r",
+  "date": "5-1-24",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01r.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 34,
+  "totalSize": 1476203,
+  "files": [
+    "applausejules_.mp3",
+    "boterham.jpg",
+    "deegrol.jpg",
+    "deegrolschaduw.jpg",
+    "favicon.ico",
+    "hartjeskoek.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01r.jclic",
+    "jules01r.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "juleshartkoekje.jpg",
+    "juleskoekje.jpg",
+    "julesmand.jpg",
+    "julesmetboterham.jpg",
+    "julesmettaart.jpg",
+    "koek.jpg",
+    "koekjes.jpg",
+    "koekjesbakken.jpg",
+    "koekjesschaduw.jpg",
+    "kokmuts.jpg",
+    "kokmuts2.jpg",
+    "kokmuts3.jpg",
+    "kokmutsblauw.jpg",
+    "kokmutsgeel.jpg",
+    "kokmutsgroen.jpg",
+    "kokmutsrood.jpg",
+    "kom.jpg",
+    "komschaduw.jpg",
+    "materiaalblauw.jpg",
+    "materiaalgeel.jpg",
+    "materiaalgroen.jpg",
+    "materiaalrood.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "taart.jpg"
+  ]
+}
