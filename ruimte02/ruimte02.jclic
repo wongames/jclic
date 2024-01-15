@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ruimte02" version="0.1.3">
+ <settings>
+  <title>ruimte02</title>
+  <revision description="created" date="12/31/23" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="puzzel" delay="1" />
+  <item name="vormen" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="richting" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="aarde.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="astro3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="auto.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="maan.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raket.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ruimtemannetje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zon.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="astro2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" border="true" image="PUZZEL2.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel sterren tel je?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="ster14.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ster6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="as1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="as2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="as3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="as4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="as5jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="as6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="vormen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Welke astonaut past in de raket? Kijk goed naar de vormen.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="7" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell image="cirkel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="driehoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="hartje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vierkantjpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="zeshoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rechthoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="vormster.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="7" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="1" />
+    <cell image="raketcirkel.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raketdriehoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="rakethartje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raketvierkant.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raketzeshoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raketrechthoek.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="raketster.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="richting" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>In welke richting vliegt de raket?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="2" image="raketblauw.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="raketblauwlinks.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="raketblauwrechts.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="raketgeel.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="raketgeellinks.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="raketgeelrechts.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="2" image="raketrood.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="1" image="raketlinks.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell id="0" image="raketrechts.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="rechts .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="links  .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="boven   .jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="aarde.jpg" file="aarde.jpg" />
+  <media name="achtergrond de ruimte2.jpg" file="achtergrond_de_ruimte2.jpg" />
+  <media name="as1.jpg" file="as1.jpg" />
+  <media name="as2.jpg" file="as2.jpg" />
+  <media name="as3.jpg" file="as3.jpg" />
+  <media name="as4.jpg" file="as4.jpg" />
+  <media name="as5jpg.jpg" file="as5jpg.jpg" />
+  <media name="as6.jpg" file="as6.jpg" />
+  <media name="astro2.jpg" file="astro2.jpg" />
+  <media name="astro3.jpg" file="astro3.jpg" />
+  <media name="auto.jpg" file="auto.jpg" />
+  <media name="boven   .jpg" file="boven___.jpg" />
+  <media name="cirkel.jpg" file="cirkel.jpg" />
+  <media name="driehoek.jpg" file="driehoek.jpg" />
+  <media name="hartje.jpg" file="hartje.jpg" />
+  <media name="links  .jpg" file="links__.jpg" />
+  <media name="maan.jpg" file="maan.jpg" />
+  <media name="PUZZEL2.jpg" file="puzzel2.jpg" />
+  <media name="raket.jpg" file="raket.jpg" />
+  <media name="raketblauw.jpg" file="raketblauw.jpg" />
+  <media name="raketblauwlinks.jpg" file="raketblauwlinks.jpg" />
+  <media name="raketblauwrechts.jpg" file="raketblauwrechts.jpg" />
+  <media name="raketcirkel.jpg" file="raketcirkel.jpg" />
+  <media name="raketdriehoek.jpg" file="raketdriehoek.jpg" />
+  <media name="raketgeel.jpg" file="raketgeel.jpg" />
+  <media name="raketgeellinks.jpg" file="raketgeellinks.jpg" />
+  <media name="raketgeelrechts.jpg" file="raketgeelrechts.jpg" />
+  <media name="rakethartje.jpg" file="rakethartje.jpg" />
+  <media name="raketlinks.jpg" file="raketlinks.jpg" />
+  <media name="raketrechthoek.jpg" file="raketrechthoek.jpg" />
+  <media name="raketrechts.jpg" file="raketrechts.jpg" />
+  <media name="raketrood.jpg" file="raketrood.jpg" />
+  <media name="raketster.jpg" file="raketster.jpg" />
+  <media name="raketvierkant.jpg" file="raketvierkant.jpg" />
+  <media name="raketzeshoek.jpg" file="raketzeshoek.jpg" />
+  <media name="rechthoek.jpg" file="rechthoek.jpg" />
+  <media name="rechts .jpg" file="rechts_.jpg" />
+  <media name="ruimtemannetje.jpg" file="ruimtemannetje.jpg" />
+  <media name="ster.jpg" file="ster.jpg" />
+  <media name="ster14.jpg" file="ster14.jpg" />
+  <media name="ster2.jpg" file="ster2.jpg" />
+  <media name="ster3.jpg" file="ster3.jpg" />
+  <media name="ster4.jpg" file="ster4.jpg" />
+  <media name="ster5.jpg" file="ster5.jpg" />
+  <media name="ster6.jpg" file="ster6.jpg" />
+  <media name="vierkantjpg.jpg" file="vierkantjpg.jpg" />
+  <media name="vormster.jpg" file="vormster.jpg" />
+  <media name="zeshoek.jpg" file="zeshoek.jpg" />
+  <media name="zon.jpg" file="zon.jpg" />
+  <media name="applauseruimte.mp3" file="applauseruimte.mp3" />
+ </mediaBag>
+</JClicProject>
+
