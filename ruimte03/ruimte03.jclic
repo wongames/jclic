@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ruimte03" version="0.1.3">
+ <settings>
+  <title>ruimte03</title>
+  <revision description="created" date="12/31/23" />
+  <descriptors />
+  <meta_langs>nl</meta_langs>
+  <descriptions>
+   <description language="nl" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memo" delay="1" />
+  <item name="groot naar klein" delay="1" />
+  <item name="rijmen" delay="1" />
+  <item name="tellen" delay="1" />
+  <item name="puzzel2" delay="1" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="groot naar klein" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="groot_naar_klein_.jpg" type="initial">
+     <style />
+     <p>Van GROOT naar klein</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="1" cols="4" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="groot.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kleiner.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="klein.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="kleinst.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="memo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Memory: zoek 2 dezelfde plaatjes</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="3" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="3" />
+    <cell image="memo1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo6.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo7.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo8.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo9.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo10.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo11.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo12.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="memo5.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="rijmen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Zoek het juiste rijmpaar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="2" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell txtAlign="right,bottom" image="maanrijm.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>MAAN</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="zon.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ZON</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="astro2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>ASTRONAUT</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="memo7.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>RAKET</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="2" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell txtAlign="right,bottom" image="haan.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>HAAN</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="TON2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>TON</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="koud_.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>KOUD</p>
+    </cell>
+    <cell txtAlign="right,bottom" image="bed_rijmen_.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>BED</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="puzzel2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Puzzel je mee?</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="4" cols="3" border="true" image="puzzel3a.jpg">
+    <style />
+    <shaper class="@TriangularJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tellen" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Hoeveel ufo's tel je ?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="achtergrond de ruimte2.jpg" tiled="true" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="finishedError" file="applauseruimte.mp3" />
+     <sound id="finishedOk" file="applauseruimte.mp3" />
+    </eventSounds>
+   </settings>
+   <cells rows="2" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="ufo21jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo6.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo7.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="ufo8.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="300.0" cellHeight="300.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell image="1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="2.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="3.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="4.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="6jpg.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="5.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="7.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="8.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1.jpg" file="1.jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="5.jpg" file="5.jpg" />
+  <media name="6jpg.jpg" file="6jpg.jpg" />
+  <media name="7.jpg" file="7.jpg" />
+  <media name="8.jpg" file="8.jpg" />
+  <media name="achtergrond de ruimte2.jpg" file="achtergrond_de_ruimte2.jpg" />
+  <media name="astro2.jpg" file="astro2.jpg" />
+  <media name="bed_rijmen_.jpg" file="bed_rijmen_.jpg" />
+  <media name="groot.jpg" file="groot.jpg" />
+  <media name="groot_naar_klein_.jpg" file="groot_naar_klein_.jpg" />
+  <media name="haan.jpg" file="haan.jpg" />
+  <media name="klein.jpg" file="klein.jpg" />
+  <media name="kleiner.jpg" file="kleiner.jpg" />
+  <media name="kleinst.jpg" file="kleinst.jpg" />
+  <media name="koud_.jpg" file="koud_.jpg" />
+  <media name="maanrijm.jpg" file="maanrijm.jpg" />
+  <media name="memo1.jpg" file="memo1.jpg" />
+  <media name="memo10.jpg" file="memo10.jpg" />
+  <media name="memo11.jpg" file="memo11.jpg" />
+  <media name="memo12.jpg" file="memo12.jpg" />
+  <media name="memo2.jpg" file="memo2.jpg" />
+  <media name="memo3.jpg" file="memo3.jpg" />
+  <media name="memo4.jpg" file="memo4.jpg" />
+  <media name="memo5.jpg" file="memo5.jpg" />
+  <media name="memo6.jpg" file="memo6.jpg" />
+  <media name="memo7.jpg" file="memo7.jpg" />
+  <media name="memo8.jpg" file="memo8.jpg" />
+  <media name="memo9.jpg" file="memo9.jpg" />
+  <media name="puzzel3a.jpg" file="puzzel3a.jpg" />
+  <media name="TON2.jpg" file="ton2.jpg" />
+  <media name="ufo2.jpg" file="ufo2.jpg" />
+  <media name="ufo21jpg.jpg" file="ufo21jpg.jpg" />
+  <media name="ufo3.jpg" file="ufo3.jpg" />
+  <media name="ufo4.jpg" file="ufo4.jpg" />
+  <media name="ufo5.jpg" file="ufo5.jpg" />
+  <media name="ufo6.jpg" file="ufo6.jpg" />
+  <media name="ufo7.jpg" file="ufo7.jpg" />
+  <media name="ufo8.jpg" file="ufo8.jpg" />
+  <media name="zon.jpg" file="zon.jpg" />
+  <media name="applauseruimte.mp3" file="applauseruimte.mp3" />
+ </mediaBag>
+</JClicProject>
+
