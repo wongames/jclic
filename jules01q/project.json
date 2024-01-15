@@ -1,0 +1,51 @@
+{
+  "title": "jules01q",
+  "date": "31-12-23",
+  "description": {
+    "nl": ""
+  },
+  "license": {
+    "nl": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "nl"
+  ],
+  "mainFile": "jules01q.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 25,
+  "totalSize": 1747462,
+  "files": [
+    "aap.jpg",
+    "aapfhoofd.jpg",
+    "applausejules_.mp3",
+    "blauwpandatrui.jpg",
+    "favicon.ico",
+    "geelpandatrui.jpg",
+    "giraf.jpg",
+    "girafhoofd.jpg",
+    "groenpandatrui.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "jules01q.jclic",
+    "jules01q.jclic.js",
+    "julesachtergrondjpg.jpg",
+    "leeuwfhoofd.jpg",
+    "olifant.jpg",
+    "pinguin.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "puzzel.jpg",
+    "puzzel2.png",
+    "roodpandatrui.jpg",
+    "schaduwaapfhoofd.jpg",
+    "schaduwgirafhoofd.jpg",
+    "schaduwleeuwfhoofd.jpg",
+    "schaduwzebra.jpg",
+    "zebra.jpg"
+  ]
+}
